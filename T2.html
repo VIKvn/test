@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Test</title> 
+    <style>
+        body{
+            background-color: #222125;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p>Well , CSS , Chắc Không Tệ Lắm Nhỉ.  <span style="color: #222125;">SPOLIER : Tệ Hơn HTML</span> </p>
+    <button onclick="toggleSnowflakes(),changeText1()">Snow Effect : <span id="text1">OFF</span></button>
+    <div class="folder" onclick="toggleFolder('F1')"><h1>Bài 13 : Khái Niệm, Vai Trò Của CSS</h1></div>
+    <div class="content" id="F1">
+      <p>THIS IS TEST 1</p>
+  </div>
+
+    <div class="folder" onclick="toggleFolder('F2')"><h1>Bài 14 : Định Dạng Văn Bản Bằng CSS</h1></div>
+    <div class="content" id="F2">
+      <p>THIS IS TEST 2</p>
+  </div>
+
+    <div class="folder" onclick="toggleFolder('F3')"><h1>Bài 15 : Tạo Màu Cho Chữ Và Nền</h1></div>
+    <div class="content" id="F3">
+      <p>THIS IS TEST 3</p>
+  </div>
+    <div class="folder" onclick="toggleFolder('F4')"><h1>Bài 16 : Định Dạng Khung</h1></div>
+    <div class="content" id="F4">
+      <p>THIS IS TEST 4</p>
+  </div>
+    <div class="folder" onclick="toggleFolder('F5')"><h1>Bài 17 : Các Mức Ưu Tiên Của Bộ Chọn</h1></div>
+    <div class="content" id="F5">
+      <p>THIS IS TEST 5</p>
+  </div>
+  <div class="folderhide" onclick="toggleFolder('F6')" style="background: #222125;"><h1 style="color: #222125;font-size: 10px;" >Ngoài Lề Muốn Nhấn Không? </h1></div>
+  <div class="content" id="F6">
+    <p>Note :</p>
+    <p>
+    &<span></span>lt; : &lt; <br>
+    &<span></span>gt; : &gt; <br>
+    &<span></span>ensp; : Chèn 2 Khoảng Trống <br>
+    &<span></span>emsp; : Chèn 4 Khoảng Trống</p>
+    <p>Play Music ?</p>
+    <button onclick="toggleLoop1(),changeText1()">Loop : <span id="text2">ON</span> </button>
+    
+    <table border="1">
+      <tr>
+        <th>Song 1</th> <td> <audio id="audio1" controls loop>
+      <source src="audio/BOFU2015Puru  Snow White.mp3" type="audio/mpeg">
+  </audio></td></tr>
+  <tr>
+    <th>Song 2 <p id="text">Ver 1</p></th> 
+    <td>
+      <audio id="myAudio" id="audio2" loop controls>
+        <source src="audio/Sweater Weather 1.mp3" type="audio/mpeg">
+      </audio>
+      <button onclick="changeSong(),changeText2()">Switch Ver</button>
+      
+      
+        <script>
+            function changeText2() {
+                var text = document.getElementById("text");
+                if (text.innerHTML === "Ver 1") {
+                    text.innerHTML = "Ver 2";
+                } else {
+                    text.innerHTML = "Ver 1";
+                }
+            }
+        var audio = document.getElementById("myAudio");
+        var isPlaying = false;
+        
+        function changeSong() {
+            if (isPlaying) {
+                audio.pause();
+                audio.src = "audio/Sweater Weather 1.mp3";
+                isPlaying = false;
+            } else {
+                audio.pause();
+                audio.src = "audio/Sweater Weather 2.mp3";
+                isPlaying = true;
+            }
+        }
+        </script>
+    </td>
+  </tr>
+  <tr>
+    <th>Song 3</th> <td><audio id="audio3" controls loop>
+      <source src="audio/III.mp3" type="audio/mpeg">
+  </audio></td>
+  </tr>
+  <tr>
+    <th>Song 4 </th> <td><audio id="audio1" controls loop>
+      <source src="audio/Tourist.mp3" type="audio/mpeg">
+  </audio></td>
+  </tr> 
+    </table>
+    
+    <p>Small Message : dyxzcpl wnluplx xf per fks</p>
+    <script>
+      function toggleLoop1() {
+          var audioElements = document.querySelectorAll('audio');
+          audioElements.forEach(function(audio) {
+              audio.loop = !audio.loop;
+          });
+      }
+      function changeText1() {
+          var text = document.getElementById("text2");
+          if (text.innerHTML === "ON") {
+              text.innerHTML = "OFF";
+          } else {
+              text.innerHTML = "ON";
+          }
+      }
+  </script>
+  </div>
+
+  <script>
+  function toggleFolder(folderId) {
+      var content = document.getElementById(folderId);
+      if (content.style.display === "block") {
+          content.style.display = "none";
+      } else {
+          content.style.display = "block";
+      }
+  }
+  </script>
+
+  <script>
+  function toggleFolder(folderId) {
+      var content = document.getElementById(folderId);
+      if (content.style.display === "block") {
+          content.style.display = "none";
+      } else {
+          content.style.display = "block";
+      }
+  }
+  </script>
+<div class="snowflakes" aria-hidden="true">
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+  </div>
+  <script>
+    function changeText1() {
+            var text = document.getElementById("text1");
+            if (text.innerHTML === "OFF") {
+                text.innerHTML = "ON";
+            } else {
+                text.innerHTML = "OFF";
+            }
+        }
+    function toggleSnowflakes() {
+        const snowflakes = document.querySelectorAll('.snowflake');
+        snowflakes.forEach(snowflake => {
+            if (snowflake.style.display === 'block') {
+                snowflake.style.display = 'none';
+            } else {
+                snowflake.style.display = 'block';
+            }
+        });
+    }
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon/null.png">
+    <title>Tin 12 Học kỳ 1 </title>
+</head>
+<body>
+  <video id="myVideo" style="display: none;"  onended="shutdownWebsite()" >
+      <source src="vid/jumpscare.mp4" type="video/mp4">
+  </video>
+  <div>
+    <a href="#" class="to-top"><img src="icon/arrow up.png" alt="⭡" style="width: 50px;;"></a>
+    
+    <script>
+      const toTop = document.querySelector(".to-top");
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 100) {
+      toTop.classList.add("active");
+    } else {
+      toTop.classList.remove("active");
+    }
+  })
+    </script>
+  </div>
+
+  <h2>Đối Chiếu Sách Với Trang Này Nếu Đọc Sách Không Hình Dung Được</h2>
+  <h2>Bạn Có Ý Kiến ? Đăng Ẩn Danh Vào <a href="https://www.facebook.com/groups/476628662897419" target="_blank">Nhóm Này</a> </h2>
+  <h2>Trải Nghiệm Tốt Hơn ? Xoay Ngang Thiết Bị Đi .</h2>
+  <span style="font-size: 5px;color: #cccccc;">Xem Nguồn : Nhấn Phím F12 Hoặc Ctrl + Shift + I <br>Kiểm Tra Nguồn Tại Nơi Cụ Thể : Chọn Vùng - Chuột Phải - Inspect/Kiểm Tra ; </span>
+
+  
+  <div class="folder" onclick="toggleFolder('F1')"><h1>Bài 8 : Định Dạng Văn Bản </h1></div>
+  <div class="content" id="F1">
+    <h2>I. Thuộc Tính Thẻ</h2>
+    <p>Chắc Cũng Biết Hết Vai Trò Của Thẻ Rồi Nhỉ. [<b>Này Là Chép Trong Sách + Chỉnh Vài Chỗ Thôi ỤwU</b>] </p>
+  
+   <p><span style="color: red;">Thuộc Tính</span> Giúp <b>Bổ Sung Thông Tin Và Chức Năng</b> Của Thẻ Được Chỉ Định Và Thường Được Viết Ngay Sau <span style="color: #960000;">Tên Thẻ</span>.</p> 
+    
+    <p>Cú Pháp Xác Định Thuộc Tính : <span style="color:red" >Tên Thuộc Tính </span>= "<span style="color:blue" >Giá Trị</span>" 
+    , Ngoại Trừ Các Trường Hợp Đặc Biệt Là Thuộc Tính Chỉ Có Đúng 2 <span style="color: blue;">Giá Trị</span> : Có / Không .</p>
+  
+    
+    <p>Thuộc Tính Thường <b>Nằm Trong Thẻ Bắt Đầu</b> (Hoặc Là Thường Không Nằm Trong Thẻ Kết Thúc  ¯\_(ツ)_/¯ ) Và <b>Nằm Sau Tên Thẻ</b> . Trong Trường Hợp Thẻ Đó Có Nhiều Hơn Một Thuộc Tính Thì Các Thuộc Tính <b>Thường Ngăn Cách Nhau Bằng Dấu Cách</b> :
+      <br>&lt;<span style="color:#960000" >Tên Thẻ</span> <span style="color:red" >Thuộc Tính 1</span>="<span style="color:blue" >Giá Trị 1</span>" <span style="color:red" >Thuộc Tính 2</span> ="<span style="color:blue" >Giá Trị 2</span>" &gt; <span style="color: green;">Nội Dung</span> &lt;<span style="color:#960000" >/Tên Thẻ</span>&gt; </p>
+    <p>Một Trong Những Thuộc Tính Được Sử Dụng Nhiều Nhất Là Thuộc Tính <span style="color: red;">style</span> Dùng Để Thiết Lập Định Dạng Văn Bản Như Chọn Màu Sắc , Cỡ Chữ , Tạo Khung , Căn Lề , … Cho Một Phần Tử HTML <b>Ngay Tại Vị Trí Được Viết</b> </p>
+    
+    <h2>II. Các Thẻ Định Dạng Trình Bày Văn Bản</h2>
+    <h3>a. Định Dạng Văn Bản</h3>
+    
+    <p>Để Định Dạng Tiêu Đề Và Các Tiêu Đề Con Xuất Hiện Trong Văn Bản, Ta Sử Dụng <b>Các Thẻ hx</b> Với <b>x</b> Nhận Các Giá Trị Từ 1 --&gt; 6 , Thể Hiện Độ Quan Trọng Giảm Dần Của Nội Dung (Bla Bla Bla Đọc Sgk Đi)
+    <br><a href="https://webcoban.vn/html/the-heading-h1-h6-trong-html.html" target="_blank" style="color: #cccccc;">Thông Tin Chi Tiết Hơn Về style Mặc Định Của <b>hx</b> .</a></p>
+    
+    
+    
+    <h3>b. Định Dạng Đoạn Văn Bản  </h3>
+    <h4>(Thực Hành Thì Dễ Giải Thích Thì Khó - Help)</h4>
+    
+    <p><b>Một Văn Bản</b> Thường Gồm <b>Nhiều Đoạn Văn Bản</b> Tách Rời Nhau. Các Đoạn Có Thể Được Định Dạng Giống Hoặc Khác Nhau Tuỳ Vào Vị Trí, Nội Dung Và Cách Trang Trí .</p>
+    
+    
+    <p>Cách Đơn Giản Nhất Để Xác Định Đoạn Là Đặt Nội Dung Đoạn Trong Cặp Thẻ &lt;p&gt;...&lt;/p&gt; Với Cấu Trúc :
+      <br> <span style="color:#960000" >&lt;p&gt;</span> Nội Dung <span style="color:#960000" >&lt;/p&gt;</span> . </p>
+      <ul>
+        <li>Khi Gặp Cặp Thẻ  &lt;p&gt; . . . &lt;/p&gt; Trình Duyệt Sẽ Hiển Thị Nội Dung Đoạn Trên Dòng Mới Kèm Với Khoảng Trống Nhỏ Ở Trên Và Dưới Đoạn. </li>
+      <li>Nội Dung trong Thẻ &lt;p&gt; Chỉ Có Thể Chứa Các Phần Tử Nội Tuyến (<a href="https://hocwebchuan.com/tutorial/tut_html_inline.php" target="_blank">Nhóm inline</a>) </li>
+      <li><b>p</b> Viết Tắt Cho <b>p</b>aragraphs</li>  
+    </ul>
+    <hr>
+    <p>Khi Cần Thao Tác Với Nhiều Loại Nội Dung, Ta Có Thể Sử Dụng Thẻ &lt;div&gt; Và Thẻ &lt;span&gt;. </p>
+    <p>Cặp Thẻ <b>&lt;div&gt; . . .&lt;/div&gt;</b> Hay <b>&lt;span&gt; . . . &lt;/span&gt;</b> Tạo Một Khối Chứa Nội Dung Bất Kì Đặt Ở Giữa Hai Thẻ . </p>
+    <ul>
+      <li>Thẻ &lt;div&gt; Là Một Khối - Có Thể Chứa <b>Các Phần Tử Khác</b> Ngoại Trừ Các Thẻ &lt;HTML&gt; , &lt;meta&gt; , &lt;body&gt; , &lt;title&gt; , &lt;link&gt; ; Bắt Đầu Trên Dòng Mới </li>
+      <li>Thẻ &lt;span&gt; Được Sử Dụng Để Nhóm Các inline - Sử Dụng Cho Quy Mô Nhỏ Hơn. Thẻ &lt;span&gt;  <b>Không Hiển Thị Trên Dòng Mới </b>Mà Hiển Thị Trên Cùng Dòng Đang Viết, . </li>
+    </ul>
+    
+    <p>Để Thêm Các Định Dạng Như Khung, Lề,... Cho Đoạn, Ta Sử Dụng Thuộc Tính <span style="color: red;">style</span>. Thuộc Tính Này Sẽ Được Giới Thiệu Chi Tiết Trong Các Bài Sau (Bài 13-17). </p>
+    
+    <p>Lưu ý: Ngoài Các Thẻ Định Dạng Đoạn Và Khối Kể Trên, Còn Có Hai Thẻ &lt;br&gt; Dùng Để Xuống Dòng Hoặc &lt;hr&gt; Dùng Để Xuống Dòng + Tạo Ra Một Đường Kẻ Ngang Trên Trang Web </p>
+    <p>Nhức Đầu Nhỉ , Ví Dụ Xiu Xíu Nhé</p>
+    <table border="1">
+      <tr>
+        <th>Thẻ</th><th>Ví Dụ</th><th>Kết Quả</th>
+      </tr>
+      <tr>
+        <th>(Phần I)</th>
+        <td>&lt;<span style="color:#960000" >a</span> <span style="color:red" >href</span> ="<span style="color:blue" >https://www.youtube.com/</span>"&gt; <span style="color: green;">Pls Don't Click Me</span> &lt;<span style="color:#960000" >/a</span>&gt;
+        <br>&lt;<span style="color:#960000" >a</span> <span style="color:red" >href</span> ="<span style="color:blue" >https://www.youtube.com/</span>" <span style="color:red" >style</span> ="<span style="color:blue" >font-size: 25px;</span>" &gt; <span style="color: green;">Pls Don't Click Me</span> &lt;<span style="color:#960000" >/a</span>&gt;
+          <br>Có Thể Thấy <i>Sự Khác Biệt</i> Khi Dùng <b>1 Và 2 Thuộc Tính </b> 
+          <span class="hide">Thực Chất Là <b>2 Và 3</b> Vì Có Dùng target="_blank" - Qua Bài 10 Nhé</span>
+        </td>
+        <td><a href="vid/u shouldn't click this.mp4" target="_blank">Pls Don't Click Me</a><br><a href="vid/u shouldn't click this.mp4"  target="_blank" style="font-size: 25px;">Pls Don't Click Me</a></td>
+      </tr>
+      <tr>
+        <th>hx</th> 
+        <td>
+        &lt;h1&gt; Text 1 &lt;/h1&gt;<br>
+        &lt;h2&gt; Text 2 &lt;/h2&gt;<br>
+        &lt;h3&gt; Text 3 &lt;/h3&gt;<br>
+        &lt;h4&gt; Text 4 &lt;/h4&gt;<br>
+        &lt;h5&gt; Text 5 &lt;/h5&gt;<br>
+        &lt;h6&gt; Text 6 &lt;/h6&gt;
+        </td>
+        <td>
+          <span style="display: block; font-size: 2em;    margin-top: 0.67em; margin-bottom: 0.67em; margin-left: 0; margin-right: 0; font-weight: bold;"> Text 1</span>
+          <span style="display: block; font-size: 1.5em;  margin-top: 0.83em; margin-bottom: 0.83em; margin-left: 0; margin-right: 0; font-weight: bold;"> Text 2</span>
+          <span style="display: block; font-size: 1.17em; margin-top: 1em;    margin-bottom: 1em;    margin-left: 0; margin-right: 0; font-weight: bold;"> Text 3</span>
+          <span style="display: block; font-size: 1em;    margin-top: 1.33em; margin-bottom: 1.33em; margin-left: 0; margin-right: 0; font-weight: bold;"> Text 4</span>
+          <span style="display: block; font-size: .83em;  margin-top: 1.67em; margin-bottom: 1.67em; margin-left: 0; margin-right: 0; font-weight: bold;"> Text 5</span>
+          <span style="display: block; font-size: .67em;  margin-top: 2.33em; margin-bottom: 2.33em; margin-left: 0; margin-right: 0; font-weight: bold;"> Text 6</span>
+        </td>
+      </tr>
+      <tr>
+  
+      </tr>
+      <tr>
+        <th>p</th>
+        <td>
+          &lt;p&gt; To Live &lt;/p&gt; <br>
+          &lt;p&gt; Is To Be Known &lt;/p&gt; <br>
+          &lt;p&gt; To Live &lt;/p&gt; <br>
+          &lt;p style="color: blue"&gt; Is To Be Remembered &lt;/p&gt; 
+        </td>
+        <td>
+          <p>To Live</p>
+          <p>Is To Be Known</p>
+          <p>To Live</p>
+          <p style="color: blue">Is To Be Remembered</p>
+        </td>
+      </tr>
+      <tr>
+        <th>div</th>
+        <td>
+          <p>&lt;div&gt;<br>
+         &ensp; &lt;p&gt;Câu 1&lt;/p&gt;<br>
+         &ensp; &lt;p&gt;Câu 2&lt;/p&gt;<br>
+        &lt;/div&gt;</p>
+        <p>&lt;div style="color: blue;font-size: 30px"&gt;<br>
+         &ensp; &lt;p&gt;Câu 3&lt;/p&gt;<br>
+         &ensp; &lt;p&gt;Câu 4&lt;/p&gt;<br>
+        &lt;/div&gt; <br>
+        &lt;div&gt;&lt;span&gt;Câu 5&lt;/span&gt;&lt;/div&gt;<br>
+        &lt;div&gt;&lt;span&gt;Câu 6&lt;/span&gt;&lt;/div&gt;</p>
+        </td>
+        <td>
+          <div>
+            <p>Câu 1  </p>
+            <p>Câu 2</p>
+          </div>
+          <div style="color: blue; font-size: 30px">
+            <p>Câu 3</p>
+            <p>Câu 4</p>
+          </div>
+          <div><span>Câu 5</span></div>
+          <div><span>Câu 6</span></div>
+        </td>
+      </tr>
+      <tr>
+        <th>span</th>
+        <td>
+          &lt;span&gt; (Câu 1) &lt;/span&gt; <br>
+          &lt;span style="color: <span style="color: #ff2650;">#ff2650</span>;"&gt; (Câu 2) &lt;/span&gt; <br>
+          &lt;span style="color: red;"&gt; (Câu 3) &lt;/span&gt;</td>
+        <td><span>I Was Prepared The Moment We Decided To Live . </span><span style="color: #ff2650;">Wildflowers Bloom Through Cracks In The Concrete . </span><span style="color: red;">We Will Continue Struggling, Even If It Is In Vain</span></td>
+      </tr>
+      <tr>
+        <th>br <br> hr</th> 
+        <td>Nguyễn Văn A &lt;hr&gt; <br>- Tuổi : &lt;br&gt;<br>- Sở Thích :</td>
+        <td>Nguyễn Văn A <hr>- Tuổi : <br>- Sở Thích : </td>
+      </tr>
+    </table>
+
+    <h2>III. Các Thẻ Định Dạng Phông Chữ</h2>
+      <h3>a. Định Dạng Kiểu Chữ  </h3> 
+  
+      <table border="1" >
+        <tr></tr>
+        <tr><td>Câu Bình Thường</td> <td> Đây Là Chữ Bình Thường</td> <td>Đây Là Chữ Bình Thường </td> </tr>
+        <tr><td>Chữ Đậm</td> <td> Đây Là &lt;b&gt; Chữ In Đậm &lt;/b&gt;
+          <hr> Có thể dùng <u><b>strong</b></u> thay thế cho <u><b>b</b></u> 
+        </td> <td>Đây Là <b>Chữ In Đậm</b></td> </tr>
+        <tr><td>Chữ Nghiêng</td> <td>Đây Là &lt;i&gt; Chữ In Nghiêng &lt;/i&gt;<hr>
+             Có thể dùng <u><b>em</b></u> thay thế cho <u><b>i</b></u> <br> <u><b>i</b></u> viết tắt cho <u><b>ins</b> </u> </td> <td> Đây Là <i>Chữ In Nghiêng</i></td> </tr>
+        <tr><td>Gạch Chân</td> <td>Đây Là &lt;u&gt; Chữ Gạch Chân &lt;/u&gt;</td> <td>Đây Là <u> Chữ Gạch Chân</u> </td> </tr>
+        <tr><td>Đánh Dấu</td> <td>Đây Là &lt;mark&gt; Chữ Được Đánh Dấu &lt;/mark&gt;</td> <td>Đây Là <mark> Chữ Được Đánh Dấu</mark></td> </tr>
+        <tr><td>Giảm Cỡ Chữ</td> <td>Đây Là &lt;small&gt; Chữ Nhỏ &lt;/small&gt;</td> <td>Đây Là <small> Chữ Nhỏ</small> </td> </tr>
+        <tr><td>Chỉ Số Trên</td> <td>Đây Là &lt;sup&gt; Chỉ Số Trên &lt;/sup&gt;</td> <td>Đây Là <sup> Chỉ Số Trên</sup> </td> </tr>
+        <tr><td>Chỉ Số Dưới</td> <td>Đây Là &lt;sub&gt; Chỉ Số Dưới &lt;/sub&gt;</td> <td>Đây Là <sub>Chỉ Số Dưới</sub>  </td> </tr>
+        <tr><td>Đánh Dấu Xóa <br>(Bằng Nét Gạch <br>Giữa Chữ)</td> <td>Đây Là &lt;del&gt; Chữ Bị Gạch Đi &lt;/del&gt;</td> <td>Đây Là <del>Chữ Bị Gạch Đi</del>  </td> </tr>
+        <tr><th colspan="3">Bonus Vì Tại Sao Không ? &lt;(")</th></tr>
+        <tr><td>Căn Giữa Văn Bản</td> <td>&lt;center&gt;Đây Là Chữ Được Căn Giữa&lt;/center&gt;</td> <td><center>Đây Là Chữ Được Căn Giữa</center></td> </tr>
+        <tr><td>Giữ Nguyên Định dạng</td> <td>&lt;pre&gt;Văn Bản Giữ Nguyên Định Dạng. <br>
+          Không Cần Dùng Thẻ &lt;br&gt; Để Xuống Dòng . &lt;/pre&gt;</td> <td><pre >
+  Văn Bản Giữ Nguyên Định Dạng.
+  Không Cần Dùng Thẻ &lt;br&gt; Để Xuống Dòng .</pre></td> </tr>
+          </table>
+  
+  
+      <h3>b. Định Dạng Phông Chữ</h3>
+      <table border="1">
+        <tr><th>Thuộc Tính</th><th>Câu Lệnh</th><th>Ví Dụ</th><th>Kết Quả</th></tr>
+        <tr><th>Màu Sắc</th> <td><span style="color: red; ">style</span> =<span style="color: blue;"> "color: <b>Màu</b>"</span><br><span style="color: blue;"> <b>Màu</b></span> Thường Là <b>HEX , RGB , HSL</b></td> <td>&lt;p style= "<b>color:red</b>"  &gt;1234&lt;/p&gt;</td> <td><p style= "color:red" >1234</p></td></tr>
+        <tr><th>Phông Chữ</th> <td><span style="color: red;">style</span> =<span style="color: blue;">"font-family: <b>Tên Phông</b>"</span></td> 
+          <td>&lt;span style="<b>font-family:Arial</b>" &gt;1234 abcd (Arial)&lt;/span&gt;&lt;br&gt; <br>
+            &lt;span style="<b>font-family:Times New Roman</b>"&gt;1234 abcd (Times New Roman)&lt;/span&gt;</td> 
+          <td><span style="font-family:Arial" >1234 abcd (Arial)</span><br>
+            <span style="font-family:Times New Roman">1234 abcd (Times New Roman) <hr>So Sánh Đi :3</span></td></tr>
+        <tr><th>Cỡ Chữ</th> <td><span style="color: red;">style</span> =<span style="color: blue;">"font-size: <b>Kích Cỡ</b>"</span></td> <td>&lt;p style="<b>font-size:40px</b>"  &gt;1234&lt;/p&gt;</td> <td><p style="font-size:40px" >1234</p></td></tr>
+      </table>
+  </div>
+
+  
+<div class="folder" onclick="toggleFolder('F2')"><h1>Bài 9 : Tạo Danh Sách , Bảng </h1></div>
+<div class="content" id="F2">
+  <h2>I. Tạo Danh Sách</h2>
+  <h3>a. Danh Sách Có/Ko Có Thứ Tự</h3> <hr>
+  <p>- Thẻ <b>&lt;li&gt; </b> Đóng Vai Trò Là <i>"Danh Mục"</i> Trong Danh Sách . </p> <hr>
+  <p>- Thẻ <b>&lt;ol&gt; </b> Có Tác Dụng Tạo Danh Sách Có Thứ Tự</p> 
+  <p>- Phần Tử <b>&lt;ol&gt;</b> Có Cấu Trúc : &lt;<span style="color: #960000;">ol</span> <span style="color: red;">Thuộc Tính </span> = <span style="color: blue;">"Giá Trị"</span> &gt; Nội Dung Cần Liệt Kê&lt;/<span style="color: #960000;">ol</span>&gt; </p>
+    <ul style="list-style-type: square;">
+      <li><b>&lt;ol&gt;</b> Khi Không Có Thuộc Tính <span style="color: red;"><b>type</b></span> Sẽ Mặc Định Là (<span style="color: red;"><b>type</b></span> = <span style="color: blue;">"1"</span> )</li>
+      <li><span style="color: red;"><b>type</b> </span>: Xác Định Kiểu Đánh Số Gồm Các Kiểu ("1" , "A" , "a" , "I" , "i") <br>
+        * Lưu Ý Nhỏ (Dù Sao Thì Cũng Là Sai Nên Cho Nó Sai Kiểu Tri Thức) : Khi Điền Các Giá Trị Khác ("1" , "A" , "a" , "I" , "i") Như ("0.1" , "-2" , "B" , "ab" , "II" ...) Thì <b>Type</b> Sẽ Mặc Định Là ="1" </li>
+        <li><span style="color: red;"><b>start</b> </span> : Xác Định Giá Trị Đánh Số , Nhận Giá Trị Số Nguyên <br>
+          * Lưu Ý Nhỏ (Phong Cách Sai Tri Thức) :
+          <ol>
+           <li>Khi Điền Các Giá Trị Khác Như ("A" , "u23" , ...) Thì Giá Trị Sẽ Mặc Định Là "1"</li> 
+          <li>Nếu Điền Số Nguyên Trước Và Điền Chữ/Kí Hiệu Đặc Biệt Ở Sau Thì Tuy Sai Về Mặt Lý Thuyết Nhưng <b>Start</b> Vẫn Lấy Giá Trị Số Nguyên Đằng Trước ("<b>15cm</b>" Lấy "15" , "<b>5 Điểm Là Nhiều</b>" Lấy "5" , "<b>1 2A2hiphopneverdie</b>" Lấy "1","<b>7.94</b>" Lấy "7") </li>  
+          </ol></li>
+    </ul>
+    <hr>
+    <p>- Thẻ <b>&lt;ul&gt; </b> Có Tác Dụng Tạo Danh Sách Không Có Thứ Tự .</p>
+    <p>- Phần Tử <b>&lt;ul&gt;</b> Có Cấu Trúc :  &lt;<span style="color: #960000;">ul</span> <span style="color: red;">style </span> = <span style="color: blue;">"list-style-type : <span style="color: green;">Giá Trị </span> "</span> &gt; Nội Dung Cần Liệt Kê &lt;/<span style="color: #960000;">ul</span>&gt; </p>
+    <p>- <b>&lt;ul&gt;</b> Khi Không Có Thuộc Tính Sẽ Mặc Định Là (<span style="color: red;">type</span> = <span style="color: blue;">"list-style-type : <span style="color: green;"> disc</span> "</span> ) <br> Với <span style="color: green;">Giá Trị </span> Là </p>
+    <ul style="list-style-type: disc; "> <li>disc (Colored circle fr)</li> </ul> 
+    <ul style="list-style-type: circle; "> <li>circle</li> </ul> 
+    <ul style="list-style-type: square; "> <li>square</li> </ul> 
+    <ul style="list-style-type: none; "> <li>none </li> </ul> 
+    <hr>
+    <p>- Ta Có Thể Tạo Các Danh Sách Lồng Nhau Bằng Cách Cho <span style="color: red;">DANH SÁCH CON </span> Đặt Trong <span style="color: #960000;">Thẻ &lt;li&gt;</span> Của <span style="color: red;">DANH SÁCH CHA </span> <span style="color: blue;"></p>
+    <p>Ví Dụ</p>
+    <table border="1" cellspacing="3" cellpadding="5" >
+      <tr>
+        <th>Câu Lệnh</th> <th>Kết Quả</th>
+      </tr>
+      <tr>
+
+        <td>
+          &lt;ol type="A"&gt;<br>
+            &ensp;&lt;li&gt;Dòng 1&lt;/li&gt; <br>
+            &ensp;&lt;li&gt;Dòng 2&lt;/li&gt; <br>
+          &lt;/ol&gt;
+        </td>
+        <td>
+          <ol type="A">
+            <li>Dòng 1</li>
+            <li>Dòng 2</li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          &lt;ol start="-1"&gt;<br>
+            &emsp;&lt;li&gt;Dòng 1&lt;/li&gt; <br>
+            &emsp;&lt;li&gt;Dòng 2&lt;/li&gt; <br>
+            &emsp;&lt;li&gt;Dòng 3&lt;/li&gt; <br>
+            &emsp;&lt;li&gt;Dòng 4&lt;/li&gt; <br>
+          &lt;/ol&gt;
+        </td>
+        <td>
+          <ol start="-1">
+            <li>Dòng 1</li>
+            <li>Dòng 2</li>
+            <li>Dòng 3</li>
+            <li>Dòng 4</li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <tr>
+          <td>
+            &lt;ol type="1"&gt; <br>
+             &ensp; &lt;li&gt;Khối 10&lt;/li&gt; <br>
+             &ensp; &lt;li&gt;Khối 11&lt;/li&gt; <br>
+             &ensp; &lt;li&gt;Khối 12 Gồm : <br>
+             &ensp; &lt;ul style="list-style-type: disc;"&gt; <br>
+             &emsp; &lt;li&gt;12.1&lt;/li&gt; <br>
+             &emsp; &lt;li&gt;12.2&lt;/li&gt; <br>
+             &emsp; &lt;/ul&gt; <br>
+             &ensp; &lt;/li&gt; <br>
+            &lt;/ol&gt;
+          </td>
+          <td>
+            <ol type="1">
+              <li>Khối 10</li>
+              <li>Khối 11</li>
+              <li>Khối 12 Gồm :
+                <ul style="list-style-type: disc;">
+                  <li>12.1</li>
+                  <li>12.2</li>
+                </ul>
+              </li>
+            </ol>
+          </td>
+        </tr>
+        <th>Another One</th> <th>Kết Quả</th>
+      </tr>
+      <tr>
+        <td>
+          &lt;ol <span style="color: red;">type</span>=<span style="color: blue;">"A"</span> <span style="color: red;">start</span>=<span style="color: blue;">"3"&gt;</span>  <br>
+        &emsp;&lt;li&gt;Em&lt;/li&gt; <br>
+        &emsp;&lt;li&gt;Ước&lt;/li&gt; <br>
+        &emsp;&lt;li&gt;Mơ&lt;/li&gt; <br>
+        &emsp;&lt;li&gt;Được Làm&lt;/li&gt; <br>
+        &emsp;&lt;li&gt;Siêu Nhân&lt;/li&gt; <br>
+     &lt;/ol&gt;
+        </td>
+        <td>
+          <ol type="A" start="3">
+        <li>Em</li>
+        <li>Ước</li>
+        <li>Mơ</li>
+        <li>Được Làm</li>
+        <li>Siêu Nhân</li>
+     </ol> <hr>
+     <span>*Nếu Thay <span style="color: blue;">Giá Trị</span> Của <span style="color: red;">type</span> Bằng Các Giá Trị Bên Ngoài Như("B" , "II" , ...) <br>Thì Dòng 1 Chỉ Thực Hiện <span style="color: red;">start</span> Với <span style="color: red;">type</span> Mặc Định Là "1"</span>
+        </td>
+      </tr>
+    </table>
+  <h3>b. Danh Sách Mô Tả</h3>
+    <p>Thẻ <b>&lt;dl&gt;</b> : Tạo 1 Danh Sách Mô Tả .</p>
+    <p>Thẻ <b>&lt;dt&gt;</b> : Tên Mục n , Nằm Trong &lt;dl&gt; .<span style="color: #cccccc;font-size: 10px;" > </p>  
+    <p>Thẻ <b>&lt;dd&gt;</b> : Mô Tả Của Mục n ,  Nằm Trong &lt;dt&gt; .</p>
+    <table border="1">
+      <caption>Ví Dụ</caption>
+      <tr>
+        <th>Mẫu</th> <th>Kết Quả</th>
+      </tr>
+      <tr>
+        <td>
+          &lt;dl&gt;<br>
+            &ensp;&lt;dt&gt;Một Bếp Lửa&lt;/dt&gt;<br>
+            &ensp;&lt;dd&gt;Chờn Vờn Sương Sớm&lt;/dd&gt;<br>
+            &ensp;&lt;dt&gt;Một Bếp Lửa&lt;/dt&gt;<br>
+            &ensp;&lt;dd&gt;Ấp Iu Nồng Đượm&lt;/dd&gt;<br>
+            &ensp;&lt;dt&gt;Cháu Thương Bà&lt;/dt&gt;<br>
+            &ensp;&lt;dd&gt;Biết Mấy Nắng Mưa!&lt;/dd&gt;<br>
+          &lt;/dl&gt;
+        </td>
+        <td><dl>
+          <dt>Một Bếp Lửa</dt>
+          <dd>Chờn Vờn Sương Sớm</dd>
+          <dt>Một Bếp Lửa</dt>
+          <dd>Ấp Iu Nồng Đượm</dd>
+          <dt>Cháu Thương Bà</dt>
+          <dd>Biết Mấy Nắng Mưa!</dd>
+        </dl></td>
+      </tr>
+    </table>
+  <h2>II. Thiết Lập Bảng</h2>
+  <table border="2"  >
+    <tr>
+      <th colspan="2" width="50%">  Thẻ </th>
+      <th> Chức Năng</th>
+    </tr>
+    <tr> 
+      <td colspan="2" width="50%"> table </td>
+      <td> Tạo Bảng</td>
+    </tr>
+    <tr> 
+      <td colspan="2" width="50%"> tr </td>
+      <td> Tạo Hàng </td>
+    </tr>
+    <tr> 
+      <td colspan="2" width="50%"> td </td>
+      <td> Tạo Ô Dữ Liệu Theo Hàng (Tạo Dữ Liệu Theo Cột)</td>
+    </tr>
+    <tr> 
+      <td colspan="2" width="50%"> th </td>
+      <td> Tạo Ô Tiêu Đề ( Chức Năng Như td Nhưng In Đậm Và Tự Căn Giữa) (Tạo Dữ Liệu Theo Cột)</td>
+    </tr>
+    <tr> 
+      <td colspan="2" width="50%"> caption (Không Dùng Thuộc Tính Bên Dưới Được) </td>
+      <td> Tạo Tiêu Đề Cho Bảng</td>
+    </tr>
+    <tr> <td colspan="3"></td></tr>
+    <tr>
+      <th>Thuộc Tính</th>
+      <th>Dùng Trong Thẻ</th>
+      <th>Chức Năng / Giải Thích</th>
+    </tr>
+    <tr>
+      <td align="center" >border</td>
+      <td align="center" >&lt;table&gt;</td>
+      <td >Đường Viền Bảng (Tạo Khung Và Viền Với Giá Trị = 1 , Giá Trị Càng Tăng Thì Đường Viền Càng Dày ) </td>
+    </tr>
+    <tr>
+      <td align="center" >cellspacing</td>
+      <td align="center" >&lt;table&gt;</td>
+      <td >Khoảng Cách Giữa Các Ô <span class="hide">Và Giữa Các Viền Ô</span> Trong Bảng</td>
+    </tr>
+    <tr>
+      <td align="center" >cellpadding</td>
+      <td align="center" >&lt;table&gt;</td>
+      <td >Khoảng Cách Giữa Dữ Liệu Trong Ô Với Đường Viền Ô</td>
+    </tr>
+    <tr>
+      <td align="center" >colspan</td>
+      <td align="center" >&lt;td&gt; &lt;th&gt;</td>
+      <td >Thiết Lập Số Ô Gộp Trên Cùng 1 Hàng</td>
+    </tr>
+    <tr>
+      <td align="center" >rowspan</td>
+      <td align="center" >&lt;td&gt; &lt;th&gt;</td>
+      <td >Thiết Lập Số Ô Gộp Trên Cùng 1 Cột</td>
+    </tr>
+    <tr>
+      <td align="center" >width</td>
+      <td align="center" >&lt;table&gt; &lt;td&gt; &lt;th&gt;</td>
+      <td>Chiều Rộng Của Bảng , Ô Hoặc Hàng</td>
+    </tr>
+    <tr>
+      <td align="center" >height</td>
+      <td align="center" >&lt;table&gt; &lt;td&gt; &lt;th&gt; &lt;tr&gt;</td>
+      <td  >Chiều Cao Của Bảng , Ô Hoặc Hàng</td>
+    </tr>
+    <tr>
+      <td align="center" >bgcolor</td>
+      <td align="center" >&lt;table&gt; &lt;td&gt; &lt;th&gt; &lt;tr&gt;</td>
+      <td>Thiết Lập Màu Cho Bảng , Ô Hoặc Hàng</td>
+    </tr>
+    <tr>
+      <td align="center" >align</td>
+      <td align="center" >&lt;table&gt; &lt;td&gt; &lt;th&gt; &lt;tr&gt;</td>
+      <td > align Trong Thẻ &lt;table&gt; : Canh Lề Bảng Với Trang  <br>
+        align Trong Thẻ &lt;td&gt; &lt;th&gt; &lt;tr&gt; : Canh Lề Nội Dung Bên Trong Ô Hoặc Các Ô Trong Hàng
+         </td>
+    </tr>
+    <tr> <td colspan="3">Công Thức Cấu Tạo : <span style="color: #960000;">&lt;Thẻ <span style="color: red;">Thuộc Tính</span ><span style="color: blue;"> ="Giá Trị"</span> &gt;<span style="color: black;">Nội Dung </span> &lt;/Thẻ&gt;</span></td></tr>
+    <tr> <td colspan="3">Nếu Dùng <span style="color: red;">Thuộc Tính</span > width , height , bgcolor Trong &lt;table&gt; Thì <span style="color: red;">Thuộc Tính</span > Sẽ Áp Dụng Luôn Với Các Thẻ Còn Lại</td></tr>
+  </table>
+
+  </table>
+
+
+
+
+  <table border="1" >
+    <caption>Siêu Ví Dụ</caption>
+    <tr>
+      <th>Thuộc Tính <br>Đã Sử Dụng</th><th>Câu Lệnh</th> <th>Kết Quả Hiển Thị</th>
+    </tr>
+
+    <tr> <td align="center">Ví Dụ Gốc <br>Để So Sánh</td>
+        <td>
+  <p>&lt;table border="1"&gt; <br>
+<br>
+&ensp;&lt;caption&gt;Original&lt;/caption&gt;<br>
+<br>
+  &ensp;&lt;tr&gt;<br>
+   &emsp; &lt;th&gt;&lt;/th&gt;<br>
+   &emsp; &lt;th&gt;1&lt;/th&gt;<br>
+   &emsp; &lt;th&gt;2&lt;/th&gt;<br>
+  &ensp;&lt;/tr&gt;<br>
+<br>
+ &ensp; &lt;tr&gt;<br>
+   &emsp; &lt;th&gt;A&lt;/th&gt;<br>
+   &emsp; &lt;td&gt;1A&lt;/td&gt;<br>
+   &emsp; &lt;td&gt;2A&lt;/td&gt;<br>
+  &ensp;&lt;/tr&gt;<br>
+<br>
+  &ensp;&lt;tr&gt;<br>
+   &emsp; &lt;th&gt;B&lt;/th&gt;<br>
+   &emsp; &lt;td&gt;1B&lt;/td&gt;<br>
+   &emsp; &lt;td&gt;2B&lt;/td&gt;<br>
+  &ensp;&lt;/tr&gt;<br>
+<br>
+&lt;/table&gt;</p>
+            
+        </td><td>
+        <table border="1">
+          <caption >Original</caption>
+            <tr><th></th> <th>1</th><th>2</th> </tr>
+            <tr> <th>A</th> <td>1A</td> <td>2A</td> </tr>
+            <tr><th>B</th> <td>1B</td> <td>2B</td> </tr>
+        </table>
+    </td></tr>
+    <tr><td align="center">cellspacing </td>
+      <td>  <p>
+&lt;table border="1" cellspacing="10"&gt;<br>
+<br>
+  &ensp;&lt;tr&gt;<br>
+    &emsp;&lt;th&gt;Text&lt;/th&gt;<br>
+    &emsp;&lt;th&gt;1&lt;/th&gt;<br>
+    &emsp;&lt;th&gt;2&lt;/th&gt;<br>
+  &ensp;&lt;/tr&gt;<br>
+<br>
+  &ensp;&lt;tr&gt;<br>
+    &emsp;&lt;th&gt;A&lt;/th&gt;<br>
+    &emsp;&lt;td&gt;1A&lt;/td&gt;<br>
+    &emsp;&lt;td&gt;2A&lt;/td&gt;<br>
+  &ensp;&lt;/tr&gt;<br>
+<br>
+  &ensp;&lt;tr&gt;<br>
+    &emsp;&lt;th&gt;B&lt;/th&gt;<br>
+    &emsp;&lt;td&gt;1B&lt;/td&gt;<br>
+    &emsp;&lt;td&gt;2B&lt;/td&gt;<br>
+  &ensp;&lt;/tr&gt;<br>
+<br>
+&lt;/table&gt;</p>
+       
+      </td>
+      <td>  
+      <table border="1" cellspacing="10"  >
+        <tr><th>Text</th> <th >1</th> <th>2</th></tr>
+        <tr> <th >A</th> <td>1A</td> <td>2A</td> </tr>
+        <tr><th >B</th> <td>1B</td> <td>2B</td> </tr>
+    </table>
+    </td>
+  </tr> 
+    <tr> <td align="center">cellpadding </td><td><p>
+&lt;table border="1" cellpadding="10"&gt;<br>
+<br>
+  &ensp;&lt;tr&gt;<br>
+    &emsp;&lt;th&gt;Text&lt;/th&gt;<br>
+    &emsp;&lt;th&gt;1&lt;/th&gt;<br>
+    &emsp;&lt;th&gt;2&lt;/th&gt;<br>
+  &ensp;&lt;/tr&gt;<br>
+<br>
+  &ensp;&lt;tr&gt; <br>
+    &emsp;&lt;th&gt;A&lt;/th&gt;<br>
+    &emsp;&lt;td&gt;1A&lt;/td&gt;<br>
+    &emsp;&lt;td&gt;2A&lt;/td&gt;<br>
+  &ensp;&lt;/tr&gt;<br>
+<br>
+  &ensp;&lt;tr&gt;<br>
+    &emsp;&lt;th&gt;B&lt;/th&gt;<br>
+    &emsp;&lt;td&gt;1B&lt;/td&gt;<br>
+    &emsp;&lt;td&gt;2B&lt;/td&gt;<br>
+  &ensp;&lt;/tr&gt;<br>
+<br>
+&lt;/table&gt;
+    </p>
+      
+  </td>
+      <td>
+        <table border="1" cellpadding="10" >
+            <tr><th>Text</th> <th>1</th><th>2</th> </tr>
+            <tr> <th>A</th> <td>1A</td> <td>2A</td> </tr>
+            <tr><th>B</th> <td>1B</td> <td>2B</td> </tr>
+        </table>
+    </td></tr>
+    <tr> <td align="center" style="line-height: 200%;">border <br>align <br>colspan <br>rowspan</td><td> 
+        <p>
+&lt;table border="10" align="center"&gt;<br>
+<br>
+  &ensp;&lt;tr&gt;<br>
+    &emsp;&lt;th&gt;&lt;/th&gt;<br>
+     &emsp;&lt;th colspan="2"&gt;Num&lt;/th&gt;<br>
+  &ensp;&lt;/tr&gt;<br>
+<br>
+  &ensp;&lt;tr&gt;<br>
+    &emsp;&lt;th rowspan="2"&gt;A & B&lt;/th&gt;<br>
+     &emsp;&lt;td&gt;1A&lt;/td&gt;<br>
+      &emsp;&lt;td&gt;2A&lt;/td&gt;<br>
+  &ensp;&lt;/tr&gt;<br>
+<br>
+  &ensp;&lt;tr&gt;<br>
+    &emsp;&lt;td&gt;1B&lt;/td&gt;<br>
+     &emsp;&lt;td&gt;2B&lt;/td&gt;<br>
+  &ensp;&lt;/tr&gt;<br>
+<br>
+&lt;/table&gt;
+</p>
+    </td><td>
+        <table border="10" align="center">
+            <tr><th></th> <th colspan="2">Num</th> </tr>
+            <tr> <th rowspan="2">A & B</th> <td>1A</td> <td>2A</td> </tr>
+            <tr> <td>1B</td> <td>2B</td> </tr>
+        </table>
+    </td></tr>
+    <tr> <td align="center" style="line-height: 200%;">width <br>heigth <br>bgcolor <br>align</td>
+      <td>  <p>
+&lt;table border="1" width="100%"&gt;<br>
+<br>
+  &ensp;&lt;tr&gt;<br>
+    &emsp;&lt;th&gt;Text&lt;/th&gt;<br>
+    &emsp;&lt;th&gt;1&lt;/th&gt;<br>
+    &emsp;&lt;th&gt;2&lt;/th&gt;<br>
+  &ensp;&lt;/tr&gt;<br>
+<br>
+  &ensp;&lt;tr&gt;<br>
+    &emsp;&lt;th height="100"&gt;A&lt;/th&gt;<br>
+    &emsp;&lt;td bgcolor="#008000"&gt; &lt;span style="color: white;"&gt;1A&lt;/span&gt; &lt;/td&gt;<br>
+    &emsp;&lt;td bgcolor="#000000"&gt;2A&lt;/td&gt;<br>
+  &ensp;&lt;/tr&gt;<br>
+<br>
+  &ensp;&lt;tr&gt;<br>
+    &emsp;&lt;th align="left"&gt;B&lt;/th&gt;<br>
+    &emsp;&lt;td bgcolor="0 0 0"&gt; &lt;span style="color:white;"&gt;1B&lt;/span&gt; &lt;/td&gt;<br>
+    &emsp;&lt;td align="right"&gt;2B&lt;/td&gt;<br>
+  &ensp;&lt;/tr&gt;<br>
+<br>
+&lt;/table&gt;
+</p>
+    </td>
+    <p style="color: #008000;"></p>
+    <td>  <table border="1" width="100%" >
+      <tr><th>Text</th> <th >1</th> <th>2</th></tr>
+      <tr> <th  height="100">A</th> <td bgcolor="#008000"> <span style="color: white;">1A</span></td> <td align="center"> 2A</td> </tr>
+      <tr> <th align="left">B</th><td  bgcolor="#000000"> <span style="color: white;">1B</span></td> <td align="right">2B</td> </tr>
+  </table>
+  </td>
+</tr>
+<tr> <td align="center">(Extra)</td>
+<td><p>&lt;table border="1"&gt;<br>
+<br>
+  &ensp;&lt;tr&gt;<br>
+    &emsp;&lt;th&gt;&lt;/th&gt;<br>
+    &emsp;&lt;th&gt;1&lt;/th&gt;<br>
+    &emsp;&lt;th&gt;2&lt;/th&gt;<br>
+  &ensp;&lt;/tr&gt;<br>
+<br>
+  &ensp;&lt;tr&gt; <br>
+    &emsp;&lt;th&gt;A&lt;/th&gt;<br>
+    &emsp;&lt;td&gt;1A&lt;/td&gt;<br>
+  &ensp;&lt;/tr&gt;<br>
+<br>
+  &ensp;&lt;tr&gt;<br>
+    &emsp;&lt;th&gt;B&lt;/th&gt;<br>
+  &ensp;&lt;/tr&gt;<br>
+<br>
+&lt;/table&gt;</p>
+</td>
+<td>
+  <table border="1">
+
+    <tr>
+      <th></th> <th>1</th><th>2</th> 
+    </tr>
+  
+    <tr> 
+      <th>A</th> <td>1A</td> 
+    </tr>
+  
+    <tr>
+      <th>B</th> 
+    </tr>
+  
+  </table>
+</td>
+</tr>
+
+  </table>
+
+
+  </div>
+
+
+<div class="folder" onclick="toggleFolder('F3')"><h1>Bài 10 : Tạo Liên Kết </h1></div>
+  <div class="content" id="F3">
+  <h2>I. Siêu Văn Bản Và Đường Dẫn</h2>
+  <p><span style="color: blue;">Siêu Liên Kết</span> (<span style="color: green;">Hyperlink</span>) Là <span style="color: red;">Đường Dẫn Tài Liệu</span> Mà Người Đọc Có Thể Bấm Vào Đó Để Đi Đến 1 Bài Viết Hay Một Vùng Nào Đó Trên Website. Ví Dụ : https://www.youtube.com/watch?v=19y8YTbvri8</p>
+  <p><span style="color: blue;">Siêu Văn Bản</span> (<span style="color: green;">Hypertext</span>)  Cũng Là Một <span style="color: red;">Đường Dẫn Tài Liệu</span>  Nhưng Có Kèm Theo Văn Bản Giúp Người Đọc Biết Trước Về Đường Dẫn Mình Sẽ Bấm Vào . Ví Dụ : <a href="https://www.youtube.com/watch?v=19y8YTbvri8" target="_blank">Đường Dẫn Tới Nhạc Chủ Web Thích</a> (&lt;-- Trust Me , It's Good)</p> 
+  <center><img src="img/linktext.png" width="70%" ></center>
+  <p>Trong HTML , Thẻ <span style="color: #960000;">&lt;a&gt;</span> Được Sử Dụng Cho Các Liên Kết Với Cấu Trúc Chung :</p>
+  <span><span style="color: #960000;">&lt;a 
+  <span style="color: red;">href <span style="color: black;">=</span> <span style="color: blue;">"URL"</span> 
+  <span style="color: red;">target <span style="color: black;">=</span> <span style="color: blue;">"Nơi Chuyển Đến"</span></span></span> &gt;</span>Nội Dung Hiển Thị Tại Vị Trí Đặt Liên Kết<span style="color: #960000;">&lt;/a&gt;</span>
+  <p>Trong Đó :</p>
+  <ol>
+<li><span style="color: red;">href</span> : Dùng Để Xác Định Đường Dẫn Đến Tài Liệu Mà Bạn Muốn Chuyển Tới.
+    (Đường Dẫn Ở Đây Có Thể Là <span style="color: green;"><b>Đường Dẫn Tuyệt Đối</b></span> Hoặc <span style="color: green;"><b>Đường Dẫn Tương Đối</b></span>)</li>
+<li><span style="color: blue;">URL</span> Là Địa Chỉ (Đường Dẫn) Dẫn Tới Tài Liệu/Trang Web Được Liên Kết </li>
+<li><span style="color: red;">target</span> : Chỉ Định Nơi Sẽ Mở Tài Liệu/Trang Web , Cụ Thể </li>
+<ul><li>_self : Tài Liệu/Trang Web Được Mở Ngay Trên Cửa Sổ Hiện Tại </li>
+<li>_blank : Tài Liệu/Trang Web Được Mở Trên Cửa Sổ Mới</li>
+<li> Chi Tiết <a href="https://www.youtube.com/watch?v=HHhrtnWio6s" target="_blank">Các Giá Trị Khác</a> </li></ul></ol>
+<p>Có 2 Loại <span style="color: blue;">URL</span> Chính : <span style="color: green;">Đường Dẫn Tuyệt Đối</span> Và <span style="color: green;">Đường Dẫn Tương Đối</span></p>
+<table border="1" cellpadding="10">
+  <tr>
+    <th></th><th>Đường Dẫn Tuyệt Đối</th> <th>Đường Dẫn Tương Đối</th>
+  </tr>
+  <tr>
+    <th>Khái Niệm</th> 
+    <td>
+      Là <u>Một Chuỗi Đầy Đủ</u> Bao Gổm <span style="color: blue;">Giao Thức</span> (<b><u>http://</u></b>   Hoặc <b><u>https://</u></b>), <span style="color: blue;">Tên Miền</span> (<span style="color: green;">Domain Name</span>) Và <span style="color: blue;">Tên Đường Dẫn Tài Liệu</span> (Nếu Cần) . 
+    </td>
+    <td>
+      Là <u>Một Phần Nhỏ</u> Của <b>Đường Dẫn Tuyệt Đối</b> , Thông Thường <b>Đường Dẫn Tương Đối</b> Là <span style="color: blue;">Phần Đường Dẫn Đến Tài Liệu</span>
+    </td>
+  </tr>
+  
+  <tr><th>Ví Dụ</th>
+    <td>href= <span style="color: blue;">"https://vi.wikipedia.org/wiki/John_Wick"</span>. Đôi Khi <b>Đường Dẫn Tuyệt Đối</b> <u>Rất Dài Và Khó Nhìn</u>, Ta Vẫn Cần Để Một Cách Chính Xác</td>
+  <td>Với Cấu Trúc Website Như Hình, Nếu Ta Đang Ở  <span style="color: rgb(208, 72, 29);"><b>T12.html</b></span>  Thì Liên Kết <b>href="<span style="color: red;">Things</span>/<span style="color: rgb(170, 111, 193);"> cat.png</span>"</b> 
+    Là Đường Dẫn Tương Đối Tới Tệp Tin <span style="color: rgb(170, 111, 193);"> <b>cat.png</b></span> Trong Thư Mục <span style="color: red;"><b>Things</b></span> Hay <b>href="<span style="color: rgb(208, 72, 29);">T12 fast.html</span>"</b> Là 
+    Đường Dẫn Tương Đối Tới Tệp Tin <span style="color: rgb(208, 72, 29);"><b>T12 fast.html</b></span> , Thư Mục Things Và Tệp Tin <span style="color: rgb(208, 72, 29);"><b>T12 fast.html</b></span> Nằm Trong Vùng Thư Mục Cha [ <b>tin 12 (1)</b> ]   Với <span style="color: rgb(208, 72, 29);"><b>T12.html</b></span> .
+    <center><img src="img/img1.png"></center>
+    </td>
+  </tr>
+  <tr><th>Cách Dùng</th>
+    <td>Khi <span style="color: red;">Sử Dụng Liên Kết Trên Mạng Internet</span>  (Mà <span style="color: blue;">Tài Liệu Không Nằm Trên Máy Chủ Của Mình</span>), Ta Cần Phải <b>Sử Dụng Đường Dẫn Tuyệt Đối</b></td>
+  <td><b>Đường Dẫn Tương Đối Được Sử Dụng</b> Khi <span style="color: red;">Liên Kết Tới Một Tài Liệu Khác Trên Cùng Trang Web</span> 
+    (Cùng<span style="color: blue;"> Máy Chủ Hoặc Máy Tính Cài Đặt Trang Web</span>), Nó <span style="color: green;">Không Yêu Cầu Giao Thức Hay Tên Miền</span>, Mà <span style="color: green;">Chỉ Cần Tên Đường Dẫn</span>. 
+    </td> 
+  </tr>
+  <tr><th colspan="3">Ví Dụ Minh Họa Khác ¯\_(ツ)_/¯ From webcoban ofc</th></tr>
+  <tr >
+    <th colspan="2">Đường dẫn</th>
+    <th >Loại đường dẫn</th>
+</tr>
+<tr>
+    <td colspan="2">http://webcoban.vn</td>
+    <td align="center">TUYỆT ĐỐI</td>
+</tr>
+<tr>
+    <td colspan="2">http://webcoban.vn/html</td>
+    <td align="center">TUYỆT ĐỐI</td>
+</tr>
+<tr>
+    <td colspan="2">http://webcoban.vn/html/default.html</td>
+    <td align="center">TUYỆT ĐỐI</td>
+</tr>
+<tr>
+    <td colspan="2">http://webcoban.vn/html/cach-tao-mot-trang-web-html.html</td>
+    <td align="center">TUYỆT ĐỐI</td>
+</tr>
+<tr>
+    <td colspan="2">html</td>
+    <td align="center">tương đối</td>
+</tr>
+<tr>
+    <td colspan="2">html/default.html</td>
+    <td align="center">tương đối</td>
+</tr>
+<tr>
+    <td colspan="2">default.html</td>
+    <td align="center">tương đối</td>
+</tr>
+<tr>
+    <td colspan="2">html/cach-tao-mot-trang-web-html.html</td>
+    <td align="center">tương đối</td>
+</tr>
+<tr>
+    <td colspan="2">cach-tao-mot-trang-web-html.html</td>
+    <td align="center">tương đối</td>
+</tr>
+</table>
+  <h2>II. Các Cách Liên Kết Tới 1 Trang Web</h2>
+  <center><img src="img/img2.png" width="400px"></center>
+  <h3>a. Liên Kết Tới 1 Trang Web Khác</h3>
+ <p>Cách Hiểu 1 : Khi Ta Thêm Liên Kết Trang Web [B] (Có Tên Miền) Khác Với Trang Web [A] Hiện Tại , Liên Kết Đó Được Gọi Là Liên Kết Ngoài </p>
+ <p>Cách Hiểu 2 : Thêm Liên Kết Trang Mà Từ Tên Miền(Domain) Của Bạn Trỏ Đến Một Domain Khác </p>
+ <p>Ví Dụ : Nếu Bạn Là Mảk Thì Bạn Sở Hữu : https://www.facebook.com/ , Khi Đó https://www.youtube.com/ Là Liên Kết Ngoài </p> 
+  <p>Để Tạo Liên Kết Ngoài , Ta Dùng Thẻ <span style="color: #960000;">&lt;a&gt;</span>  Và Truyền <b>Đường Dẫn Tuyệt Đối</b> Cho Thuộc Tính <span style="color: red;">href</span></p>
+  Other Ví Dụ : &lt;a href="https://thanhnien.vn/"&gt;Báo Thanh Niên&lt;/a&gt; <br>Kết Quả Hiển Thị : <a href="https://thanhnien.vn/">Báo Thanh Niên</a>
+  <h3 id="len">b. Liên Kết Đến 1 Vị Trí Khác Trong Cùng Website</h3>
+  <span class="hide">Điểm B : 
+    &lt;h3 id="len"&gt;b. Liên Kết Đến 1 Vị Trí Khác Trong Cùng Website&lt;/h3&gt;</span>
+  <p><a href="#xuong">Teleport Về Lại Phần b4</a></p>
+
+  <p>Cách Hiểu 1 : Khi Ta Thêm Liên Kết Trang Web [B] (Có Tên Miền) Trùng Với Trang Web [A] Hiện Tại Nhưng Khác Đường Dẫn Tài Liệu, Liên Kết Đó Được Gọi Là Liên Kết Trong</p>
+  <p>Cách Hiểu 2 : Bài Viết Của Bạn Trỏ Đến <b>Một Bài Viết</b> Trong Cùng Domain Của Bạn , <b>Một Bài Viết</b> Ấy Là Liên Kết Trong.</p>
+  <p>Để Tạo Liên Kết Trong , Ta Dùng Thẻ <span style="color: #960000;">&lt;a&gt;</span>  Và Truyền <b>Đường Dẫn Tương Đối</b> Cho Thuộc Tính <span style="color: red;">href</span> . Lúc Này Vì Đường Dẫn Không Có Giao Thức Ở Đầu Nên Trình Duyệt Sẽ Kiểm Tra Liên Kết Đó Có Trên Máy Chủ Hiện Tại Không . Có Thì Vô Không Thì Chơi Khủng Long Nhảy Xương Rồng (Nếu Như Không Hiểu Nữa Thì Giống Như Kiểm Tra Chìa Khóa Thôi , Yêu Cầu Ổ A Là Chìa A Mà Tay Đang Cầm Chìa B Thì ...)</p>
+  <hr><span>(Hầu Hết Có Trong SGK Rồi Nên Ở Đây Tấu Hài/Xàm Xí Thôi , Người Nghiêm Tút Đi Đi <b>&gt;w&lt;</b>)</span>
+  <p> Giả Sử Cấu Trúc Link Web Sẽ Được Ví Như <b>Trường Học - Lớp Học - Tổ - Thành Viên ...</b> Trong Đó <b>Trường Học</b> lttrong Là Trang Chủ (Mô Phỏng Thôi Căng Làm Gì)<br> <center><img src="img/img3.png" width="400px"></center>
+  <u>Ví Dụ Điển Hình <span class="hide">Để Gặp Idol</span></u> : &lt;a href="13A6/Tổ 6/ton ngo khong"&gt;Tôn Ngộ 0&lt;/a&gt; <br>
+  Kết Quả : <a href="13A6/Tổ 6/ton ngo khong">Tôn Ngộ 0</a> <br> (Link Ko Có Thật Nên Đừng Vô Làm Gì  - .... .. . - / .- / -... .- -. / - --- .. ) </p> 
+
+  <h3>b1. Liên Kết Tới Trang Web Cùng Thư Mục</h3>
+  <p>Từ <b><u>Lớp 13A16</u></b> Có Thể Truy Cập Các Liên Kết Cùng Thư Mục Như Các Lớp 6A9 , 11A5 , ... Hoặc Từ <b><u>Tổ 6</u></b> Có Thể Truy Cập Các Liên Kết Cùng Thư Mục Như Các Tổ 1 , Tổ III blaaaaaaaa  </p>  
+  <span>Now Here Me Out :  Giờ Hiện Tại Bạn Đang Ở 10A1 (lttrong/10A1) 
+    <br> Cú Pháp Để Vô <b><u>Lớp Học 11A5</u></b> <span class="hide">(Vì Bạn Muốn Gặp Idol)</span> : <br>
+  &lt;a href="lttrong/11A5"&gt;Lớp 11A5&lt;/a&gt; <br>
+  Kết Quả :  <a href="lttrong/11A5">Lớp 11A5</a></span>
+
+  <h3>b2. Liên Kết Tới Trang Web Thuộc Thư Mục Khác , Dưới Một Cấp</h3>
+  <p><b><u>Lớp Học</u></b> Hạ 1 Bậc Sẽ Là Gì Nào ? Đúng Rồi Đấy , Các <b><u>Tổ</u></b> <span class="hide">(Kiến Lửa)</span> <br>
+  Thế <b><u>Tổ</u></b> Dưới 1 Cấp Là Gì Nhỉ Các Cô Cậu ??? Ah Yes That's Right Nó Là Tên Các <b><u>Thành Viên</u></b></p>
+  <span>Ví Dụ Bạn Hiện Tại Đã Vào 11A5 <br> Cách Để Vô Tổ Nào Đó (Tổ 2)  :
+  <br> &lt;a href="lttrong/11A5/Tổ 2"&gt;Tổ 2 Lớp 11A5&lt;/a&gt;</span> <br>Kết Quả : <a href="lttrong/11A5/Tổ 2">Tổ 2 Lớp 11A5</a>
+  
+  <h3>b3. Liên Kết Tới Trang Web Thuộc Thư Mục Khác , Dưới Hai (Hay Nhiều) Cấp</h3>
+  <p>Nào Các Cô Bé , Ví Dụ b2 Đủ Hiểu Rồi Cần Gì Daddy Đưa Thêm Ví Dụ Chứ</p>
+  
+  <h3 id="xuong">b4. Liên Kết Tới Vị Trí Khác Trong Cùng Trang Web</h3>
+  Như Cách Fan MU Từ Trong Hang Lên Đỉnh Xã Hội Và Ngược Lại
+  <p>Giải Thích Cho Các Em Bé Hiếu Học : Bé Đang Ở Điểm A Và Muốn Dịch Chuyển Đến B 
+    <br>Tại Điểm A : &lt;<span style="color: #960000;">a</span> <span style="color: red;">href </span>= "#<span style="color: blue;">Tên ID</span> "&gt; <span style="color: green;">Mô Tả Điểm B</span> &lt;<span style="color: #960000;">/a</span>&gt;
+    <br>Tại Điểm B : &lt;<span style="color: #960000;">Tên Thẻ</span> ... <span style="color: red;">id </span>= "<span style="color: blue;">Tên ID</span> "&gt; <span style="color: green;">Nội Dung</span> &lt;<span style="color: #960000;">/Tên Thẻ</span>&gt;
+    <br> (Ngắn Gọn Dễ Hiểu Hơn Thì Cứ Thêm <span style="color: red;">id </span>= "<span style="color: blue;">Tên ID</span>" Vào Nơi Muốn Dịch Chuyển Là OK )
+  </p>
+  <p>Ví Dụ : <br>Điểm A : <a href="#len">Teleport Tới Phần b</a> <br>
+    &lt;<span style="color: #960000;">a</span> 
+      <span style="color: red;">href </span>= "#
+      <span style="color: blue;">len</span> "&gt; 
+      <span style="color: green;">Teleport Tới Phần b</span> &lt;
+      <span style="color: #960000;">/a</span>&gt; <br>
+    Điểm B : 
+    
+    &lt;<span style="color: #960000;">h3</span>
+      <span style="color: red;">id </span>= "
+      <span style="color: blue;">len</span> "&gt; 
+      <span style="color: green;">b. Liên Kết Đến 1 Vị Trí Khác Trong Cùng Website</span> &lt;
+      <span style="color: #960000;">/h3</span>&gt;</p>
+
+  <h3>b5. Tạo Liên Kết Cho Hình Ảnh</h3>
+ <p>Là Nhấn Vô Ảnh Để Vào Web Nào Đó ( ͡° ͜ʖ ͡° )</p> 
+  &lt;<span style="color: #960000;">a</span> <span style="color: red;">href </span>= "<span style="color: blue;">Thông Tin</span> "&gt; <br>
+       <span style="margin-left: 20px;">&lt;<span style="color: #960000;">img</span> <span style="color: red;">src </span>= "<span style="color: blue;">Đường Dẫn Tới Tập Tin Ảnh</span>"&gt;</span><br>
+  &lt;<span style="color: #960000;">/a</span>&gt;
+
+  <p>Ví Dụ Như : <br>
+    &lt;a href="Things/web bài 10/R.html" target="_blank"&gt; <br>
+    &lt;center&gt;&lt;img src="img/cat.png" width="400px"&gt;&lt;/center&gt; <br>
+  &lt;/a&gt;
+
+  </p>
+  <a href="Things/web bài 10/R.html" target="_blank">
+    <center><img src="img/cat.png" width="400px"></center>
+  </a>
+  </div>
+
+<div class="folder" onclick="toggleFolder('F4')"><h1>Bài 11 : Chèn Tệp Tin Đa Phương Tiện Và Khung Nội Tuyến Vào Trang Web </h1></div>
+  <div class="content" id="F4">
+    <p>(Không Quá Khó , Nhưng Phiền)</p>
+    <h2>1. Chèn tệp Ảnh Vào Trang Web</h2>
+    Để Có Thể Hiển Thị Trên Web , Các Tệp Ảnh Cần Được Định Dạng Là 1 Trong Những Loại Được Trình Duyệt Web Hỗ Trợ .Các Thẻ Định Dạng Thường Dùng :
+    <table border="1"  >
+      <tr>
+        <th>Tier List </th> <th>Định Dạng</th> <th>Loại Định Dạng</th>
+      </tr>
+      <tr>
+        <th>A Tier </th> <td><center><b>PNG</b>  , <b>JPEG</b> Hoặc <b>GIF</b></center></td> <td> <center>Phổ Biến</center></td>
+      </tr>
+      <tr>
+        <th>B Tier</th> <td><center><b>JPEG-XR</b> Hoặc <b>WebP</b></center></td> <td> <center>Một Số Định Dạng Mới x Phổ Biến</center>  </td>
+      </tr>
+      <tr>
+        <th>(Thầy Cô Thích Ra Cái Này) Tier</th><td><center><b>TIFF</b> Hoặc <b>EPS</b> ,...</center></td>
+        <td><center>Các Định Dạng Này Cần Được Chuyển Đổi Sang Định Dạng Được Hỗ Trợ Ở 2 Nhóm Trên</center></td> 
+        
+      </tr>
+     </table>
+    <p>Thẻ <span style="color: #960000;"><b>&lt;img&gt;</b></span> Là Thẻ Đơn
+      (<b>Thẻ Đơn</b> Là Thẻ Không Cần Có &lt;<span style="color: #960000;"><b>/Tên Thẻ</b></span>&gt; Ở Đuôi ) 
+      Dùng Để Thêm hÌnH ảNh Vào Trang Web . Khi Thấy <span style="color: #960000;"><b>&lt;img&gt;</b></span> , Trình Duyệt Sẽ Hiểu Rằng Nó Cần Phải Đặt 1 Bức Ảnh Tại Đây <span class="hide">Nếu Không Chủ Web Sẽ Xử Nó</span> . <span style="color: #960000;"><b>&lt;img&gt;</b></span> Có Thể Được Chèn Ngay Vào Giữa Văn Bản Mà Không Sợ Bị Ngắt Dòng (Trừ Khi Ảnh Bạn To Như Tỉ Lệ Rớt Tốt Nghiệp) </p>
+      <p>Với Thẻ <span style="color: #960000;"><b>&lt;img&gt;</b></span> , Trình Duyệt Sẽ Phải Xử Lý Ảnh Trước Khi Hiển Thị Trên Web Nên Ta Cần Phải Để Tâm Đến Dung Lượng Của Ảnh Trước Khi Chèn Vào Vì Nếu Ảnh Đó Có Dung Lượng Như GI Cùng Với Cái Mạng Bị Cá Mụp Cắn Thì Thứ Đang Đến Với Bạn Chỉ Là Cái Lưng 75 Tuổi Thôi . </p>
+      <p>Các Thuộc Tính Của Thẻ <span style="color: #960000;"><b>&lt;img&gt;</b></span> Gồm 
+       <ul>
+         <li>Thuộc Tính <span style="color: red;">src</span> : Bắt Buộc Phải Có , Để Chỉ Đường Dẫn Tới Tệp Ảnh</li>
+         <li>Thuộc Tính <span style="color: red;">alt</span> : Được Sử Dụng Kèm Nhằm Cung Cấp văn Bản Thay Thế Khi Việc Hiển Thị Ảnh Bị Lỗi <span class="hide">Vì Đó Là 1 Ngày Đẹp Trời Để Cá Mụp Cắn Cáp</span> . Văn Bản Thay Thế Giúp Người Đọc/Người Xem Hình Dung Ra <b>Nội Dung Bức Ảnh</b></li>
+       </ul>
+       <table border="1">
+         <tr>
+           <th>Ví Dụ</th> <th>Result</th> 
+         </tr>
+         <tr>
+           <td>I Want To Say &lt;<span style="color: #960000;">img</span> <span style="color: red;">src</span> ="<span style="color: blue;">img/no.jpg</span>" style="width: 100px;"&gt; So Go Away ;)</td>
+           <td>I Want To Say <img src="img/no.jpg" style="width: 100px;"> So Go Away ;)</td>
+         </tr>
+         <tr>
+           <td>&lt;<span style="color: #960000;">img</span> <span style="color: red;">src</span>="<span style="color: blue;">img/cat.png</span>" <span style="color: red;">alt</span>="<span style="color: blue;">Cat Yawning</span>" style="width: 200px;"&gt;</td>
+           <td><img src="img/cat.png" alt="Cat Yawning" style="width: 200px;"><br>
+             <img src="img/cats.png" alt="Cat Yawning" style="width: 200px;"> (Đây Là Trường Hợp Ảnh Lỗi/Điền Sai Tên Hoặc Web Hết Load)</td>
+         </tr>
+       </table>
+      </p>
+    <h2>2. Chèn Âm Thanh Và Video Vào Trang Web</h2>
+    <p>Thẻ <span style="color: #960000;">&lt;video&gt;</span> Và Thẻ <span style="color: #960000;">&lt;audio&gt;</span> Dùng Để Chèn <b>vIdEo</b> Hoặc  <b>âM tHaNh</b> Vào Trang Web.</p>
+    <p>2 Thẻ Này Được Hỗ Trợ Trong Hầu Hết Các Trình Duyệt , Tuy Nhiên Định Dạng Của Các Tệp Tin Đa Phương Tiện <span class="hide">Thì Không Nghĩ Thế</span> Có Thể Sử Dụng Vẫn Phụ Thuộc Vào Trình Duyệt.</p>
+    <ul>
+      <li>Định Dạnh Phổ Biến Của <b>Video</b> : <span style="color: #007777;">mp4</span> , <span style="color: #007777;">webm</span> . <br> <span style="color: #007777;">mp4</span> Chạy Được Trực Tiếp Hầu Hết Các Trình Duyệt .</li>
+      <li>Định Dạnh Phổ Biến Của <b>Âm Thanh</b> : <span style="color: #007777;">mp3</span> , <span style="color: #007777;">wav</span> Và <span style="color: #007777;">ogg</span> Được Hỗ Trợ Bởi Hầu Hết Trình Duyệt Hiện Tại</li>
+    </ul>
+    <p>  <span style="color: #960000;">&lt;video </span><span style="color: red;">Thuộc Tính </span>=<span style="color: blue;">"Giá Trị Thuộc Tính"</span> <span style="color: #960000;">&gt;&lt;/video&gt;</span> <br>
+      <span style="color: #960000;">&lt;audio </span><span style="color: red;">Thuộc Tính </span>=<span style="color: blue;">"Giá Trị Thuộc Tính"</span> <span style="color: #960000;">&gt;&lt;/audio&gt;</span></p>
+    <p>Tương Tự Như <span style="color: #960000;">&lt;img&gt;</span> , Thẻ <span style="color: #960000;">&lt;video&gt;</span> Cũng Có Các Thuộc Tính Cơ Bản Như <span style="color: red;">src</span> , <span style="color: red;">width</span> , <span style="color: red;">height</span>. Ngoài Ra Còn Có Các <b>Thuộc Tính</b> Khác Như :</p>
+    <ul>
+  
+     <li><span style="color: red;"><b>controls</b></span> : Là Thuộc Tính Boolean <span class="hide">Boolean Là Kiểu Dữ Liệu Có 2 Giá Trị True/False</span> , Không Cần Có  <span style="color: blue;">Giá Trị Thuộc Tính</span>, 
+      Để Trình Duyệt Hiển Thị Các Thành Phần Điều Khiển Như Nút Phát / Tạm Dừng, Điều Khiển Âm Lượng... 
+      Thuộc Tính Này Nên Được Sử Dụng Để Người Truy Cập Có Thể Điều Khiến Trong Quá Trình Phát Tập Tin Đa Phương Tiện.</li>
+     <li><span style="color: red;"><b>autoplay</b></span> : Là Thuộc Tính Boolean, Không Cần Có  <span style="color: blue;">Giá Trị Thuộc Tính</span>, 
+      Cho Phép Trình Duyệt Chạy Video Ngay Khi Hiển Thị. Tuy Nhiên, Một Số Trình Duyệt Như Google Chrome Thường 
+      Không Cho Video Chạy Ngay Khi Hiển Thị Hoặc Có Thể Chạy Ngay Khi Hiển Thị Nếu Có Thuộc Tính <span style="color: red;"><b>muted</b></span> - Không Phát Tiếng.</li>
+     <li><span style="color: red;"><b>poster</b></span> : Cung Cấp Đường Dẫn Đến Tập Ảnh, Dùng Để Hiển Thị Khi Chưa Chạy Video. (a.k.a Thumbnail Của Video) </li>
+    </ul>
+    <p>Thẻ <span style="color: #960000;">&lt;audio&gt;</span> Không Có Thuộc Tính <span style="color: red;"><b>width</b></span>, <span style="color: red;"><b>height</b></span> Và <span style="color: red;"><b>poster</b></span> Nhưng Vẫn Có <span style="color: red;"><b>controls</b></span> Và <span style="color: red;"><b>autoplay</b></span></p>
+  <table border="1">
+    <tr>
+      <td colspan="2">Video Sẽ Được Mổ Xẻ : <video src="vid/spinning fish.mp4" width="200px" controls></video><br>
+       <b><span style="color: #960000;">&lt;video </span>
+  <span style="color: red;">src </span>= 
+  <span style="color: blue;">"vid/spinning fish.mp4"</span> 
+  <span style="color: red;">width </span> =
+  <span style="color: blue;">"200px"</span>
+  <span style="color: red;">controls</span>
+  <span style="color: #960000;">&gt;&lt;/video&gt;</span></b> </td>
+    </tr>
+    <tr>
+      <th>Ví Dụ</th> <th>Kết Quả</th>
+    </tr>
+    <tr>
+      <td>Nếu Tệp Văn Bản Không Có <b><span style="color: red;">controls</span></b></td> 
+      <td><video src="vid/spinning fish.mp4" width="200px" ></video></td>
+    </tr>
+    <tr>
+      <td>Nếu Tệp Văn Bản Có Thêm <span style="color: red;"><b>autoplay</b></span></td>
+      <td>Web Vừa Mới Tải Xong Thì Vid Đã Chạy Rồi</td>
+    </tr>
+    <tr>
+      <td>Nếu Tệp Văn Bản Có Thêm <span style="color: red;"><b>poster</b></span><br>
+        <span style="color: #960000;">&lt;video </span>
+        <span style="color: red;">src </span>= 
+        <span style="color: blue;">"vid/spinning fish.mp4"</span> 
+        <span style="color: red;">width </span> =
+        <span style="color: blue;">"200px"</span>
+        <span style="color: red;">poster </span>= 
+        <span style="color: blue;">"img/cat.png"</span> 
+        <span style="color: red;">controls</span>
+        <span style="color: #960000;">&gt;&lt;/video&gt;</span></b> 
+      </td> 
+      <td>
+        <video src="vid/spinning fish.mp4" width="200px" controls poster="img/cat.png"></video></td>
+    </tr>
+  </table>
+    <hr>
+    <p>Trong Trường Hợp <u>Có Nhiều Video Hoặc Nhiều Tệp Âm Thanh</u> Tương Ứng Với <u>Các Định Dạng <b>Khác Nhau</b></u>, Ta Có Thể Sử Dụng Thẻ <span style="color: #960000;">&lt;source&gt;</span> Trong Cặp Thẻ <span style="color: #960000;">&lt;video&gt;</span> Hay <span style="color: #960000;">&lt;audio&gt;</span> Để Chỉ Định Các Loại Định Dạng Khác Nhau. Trình Duyệt Sẽ Tự Động Tìm Và Hiển Thị Tệp Tin Với Định Dạng Khác Nhau Mà Nó Hỗ Trợ</p>
+    <p>Hold Up , <span style="font-size: 25px;">Let</span> <span style="font-size: 27px;">Me</span> <span style="font-size: 30px;">Explain</span> : </p>
+    <p>
+  Nếu Trong 4 Web <b>A</b> ; <b>B</b> ; <b>C</b> ; <b>D</b> Đều Có Tệp Văn Bản Như Này :  <br>
+   <br>
+  &lt;video controls&gt; <br>
+  &ensp;&lt;source src="videos/phim_heo_peppa.mp4"&gt;  (1) <br>
+  &ensp;&lt;source src="videos/phim_heo_peppa.webm"&gt;  (2) <br>
+  &ensp;&lt;source src="videos/phim_heo_peppa.ogg"&gt;  (3) <br>
+  &lt;/video&gt; <br>
+   <br>
+  Bạn Vô Trang A , Web Hỗ Trợ <b>mp4</b> , Bạn Xem Thoải Mái [Nó Sẽ Skip (2) Và (3)]. <br>
+  Bạn Vô Trang B , Web Không Còn Hỗ Trợ <b>mp4</b> Nhưng Có Hỗ Trợ <B>webm</B> , Bạn Xem Thoải Mái [Nó Sẽ Skip (3)]. <br>
+  Bạn Vô Trang C , Web Không Còn Hỗ Trợ <b>mp4</b> Và <b>webm</b> Nhưng Có Hỗ Trợ ogg , Vô Tư Bạn Ey. <br>
+  Bạn Vô Trang D , Web Không Còn Hỗ Trợ <b>Cả 3 Cái ?</b> Xem Phim Khác Đi . You're Welcome.
+  
+  </p>
+  <p>Thắc Mắc Vì Sao Sách Không Có Thuộc Tính <span style="color: red;"><b>type</b></span> Cho <span style="color: #960000;">&lt;video&gt; </span> Và <span style="color: #960000;">&lt;audio&gt; </span> À ? <br>
+  <b>...- .. / - .... ..- --- -.-. / - .. -. .... / - -.-- .--. . / -. --- / .-. .- - / .-.. .- / ...- --- / -.. ..- -. --. <br>
+    ftmo ymo ftu og xqz ymzs pu xyma (12) </b> &emsp;<span style="font-size: 0px;color: #cccccc; ">Morse + Caesar | Nếu Dùng Type Của Audio Trong Video Thì Kết Quả Nhận Được Là Audio</span></p> 
+    <h2>3. Tạo Khung Nội Tuyến Trong Trang Web</h2>
+    <p><b>Khung Nội Tuyến</b> Là 1 Khung Nhìn Chứa Tài Nguyên Web Khác trong Trang Web Hiện Tại . Để Tạo Khung Nội Tuyến Ta Dùng Thẻ <span style="color: #960000;">&lt;iframe&gt;</span> (Viết Tắt Cho <b>i</b>nline <b>frame</b> ) </p>
+    <p>Khi Cần Chèn Nội Dung Từ Youtube Hoặc Google Map , Các Nền Tảng Này Đều Cung Cấp Cho Ta <u>1 Đoạn Mã</u> Sử Dụng <span style="color: #960000;">&lt;iframe&gt;</span> Để Ta Ctrl C + Ctrl V Vào Trang Web. <span style="color: #960000;">&lt;iframe&gt;</span> Cũng Được Dùng Để Chèn Csc Nội dung Quảng Cáo .</p>
+    <p>Cú Pháp :  <br>
+      <span style="color: #960000;">&lt;iframe </span>
+          <span style="color: red;">src </span>= 
+          <span style="color: blue;">"Đường dẫn"</span> 
+          <span style="color: red;">width </span> =
+          <span style="color: blue;">"Chiều Rộng"</span>
+          <span style="color: red;">height </span>= 
+          <span style="color: blue;">"Chiều Cao"</span> 
+          <span style="color: #960000;">&gt;&lt;/iframe&gt;</span></p>  
+    <p>Uh ... Ví Dụ ¯\_(ツ)_/¯ <span id="11.3 len"> (Đây Là Đoạn Văn Bản Mà Tớ Đã Rút Gọn + Sửa Đổi <a href="#11.3 xuong" >(*)</a> ) : </span></p>  
+    <p>&lt;center&gt;
+      <span style="color: #960000;">&lt;iframe </span>
+          <span style="color: red;">width </span> =
+          <span style="color: blue;">"480"</span>
+          <span style="color: red;">height </span>= 
+          <span style="color: blue;">"270"</span> 
+          <span style="color: red;">src </span>= 
+          <span style="color: blue;">"https://www.youtube.com/embed/NOI77t_rwjw?si=VT2nisXruLlKjVhg"</span> 
+          <span style="color: #960000;">&gt;&lt;/iframe&gt;</span> <br>&lt;/center&gt;  
+      <center>
+      <iframe width="480" height="270"
+      src="https://www.youtube.com/embed/NOI77t_rwjw?si=VT2nisXruLlKjVhg"> </iframe></center>
+      <p id="11.3 xuong"><a href="#11.3 len">(*)</a> : Đoạn Văn Bản Mà Zootube Thật Sự Đưa : <br>
+        &lt;iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/NOI77t_rwjw?si=VT2nisXruLlKjVhg" <br> 
+         title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen&gt; &lt;/iframe&gt; <br>
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/NOI77t_rwjw?si=VT2nisXruLlKjVhg"
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen> </iframe></p>
+  </p>    
+  
+  
+  </div>
+
+<div class="folder" onclick="toggleFolder('F5')"><h1>Bài 12 : Tạo Biểu Mẫu </h1></div>
+  <div class="content" id="F5">
+    <h4> I NEED SUPPORT ( •̯́ ^ •̯̀)<br>
+      -1 Cái Lưng Rồi </h4>
+    <p>Biểu Mẫu Web Hay Phần Tử <b><i>form</i></b> Của HTML Là 1 Công Cụ Dùng Để Thu Thập Dữ Liệu . Dữ Liệu Được Người Dùng Nhập Vào Form Và Xử Lí Tại Chỗ Hoặc Gửi Về Máy Chủ 
+      <br>
+      
+      <p>Thẻ <span style="color: #960000;">&lt;form&gt;</span> Có Cấu Trúc Như Sau:
+      <br><span style="color: #960000;">&lt;form </span> 
+      <u><span style="color: red;">action </span>= 
+      <span style="color: blue;">"Địa Chỉ Trang Nhận Dữ Liệu"</span> 
+      <span style="color: red;">method </span> =
+      <span style="color: blue;">"Cách Gửi Dữ Liệu"</span></u>
+      <span style="color: #960000;">&gt;</span> <br>
+      &ensp; Các Phần Tử Của Biểu Mẫu <br>
+      <span style="color: #960000;">&lt;/form&gt;</span></p>
+  
+      <span>Biểu Mẫu Web Đầy Đủ Có 2 Thành Phần : </span>
+  
+      <ul>
+      <li>Thành Phần Thứ Nhất : <b><i>Biểu Mẫu Hiển Thị Trên Web</i></b> - Được Tạo Thành Bởi Các Đoạn Mã HTML . Được Sử Dụng Để Người Dùng Nhập Và Gửi Thông Tin</li>
+      <li>Thành Phần Thứ Hai : <b><i>Ứng Dụng Hoặc Script Xử Lí Dữ Liệu</i></b> - Thường Nằm Trên Máy Chủ . Vì Nó Không Thuộc Về <b>HTML</b> Hoặc <b>CSS</b> Nên Chúng Ta Sẽ Không Nói Về Cái Này.</li>
+      </ul>
+      </p>
+  
+      <p>Không Hiểu Ư ? Same Here &lt;(")</p>
+      <img src="img/this is bullshit.png" alt="Ví Dụ Về Cách Hoạt Động Của form" width="40%">
+      <p>Nói Chút Về Cách Hoạt Động Của <b><i>form</i></b> Nào
+      <br><b>ATTENTION : Đây Là Suy Nghĩ Của Người Soạn Nên Có Thể Sai</b></p>
+      <p><ol>
+        <li>Người Dùng <b>Nhập Các Thông Tin Cá Nhân</b> Như Email , Mật Khẩu , Ngày Sinh ,... <b>HOẶC Thực Hiện</b>  (Các) Thao Tác Vào <b><i>form</i></b> - <u><b>Thành Phần Thứ Nhất</b></u> Của <i><b>Biểu Mẫu</b></i></li>
+        <li><i><b>form</b></i> Sẽ Xét <b>Cách Thức Gửi Dữ Liệu</b> - Sử Dụng Thuộc Tính <b><span style="color: red;">method </span></b> - Rồi <b>Gửi Đến Nơi Nhận dữ Liệu</b> - Sử Dụng Thuộc Tính <b><span style="color: red;">action </span></b> </li>
+        <li><b>Nơi Nhận Dữ Liệu</b> Sẽ Xử Lí Thông Tin Của <b><i>form</i></b> Bằng <u><i>script</i></u> - <u><b>Thành Phần Thứ Hai</b></u> Của <i><b>Biểu Mẫu</b></i></li>
+        <li>Sau Khi Xử Lí Xong , <b>Nơi Nhận Dữ Liệu</b> Sẽ Gửi Phản Hồi Đến Người Dùng Để Thực Hiện <u>Điều</u> Đã Ghi Ở <b><i>form</i></b> (Như Là Yêu Cầu Đăng Kí Tài Khoản , Đăng Xuất Tài Khoản , Yêu Cầu Chai Nước 105°C ,...) </li>
+      </ol> 
+      <br></p>
+    
+  
+      <table border="1" >
+        <caption><b>Các Loại Phần Tử Phổ Biến</b></caption>
+        <tr>
+          <th>Phần Tử</th> <th>Định Nghĩa</th> <th>Ví Dụ</th> <th width="-20px">Kết Quả</th>
+        </tr>
+        <tr>
+          <th><span style="color: #960000;">label</span></th>
+          <td>- <span style="color: #960000;">lable  </span>Định Nghĩa <u>Nhãn</u> , Có Cấu Trúc Như Sau: <br> 
+            &emsp;<span style="color: #960000;">&lt;lable </span>
+            <span style="color: red;">for </span>= 
+            <span style="color: blue;">"Mã Định Danh Của input Tương Ứng"</span><span style="color: #960000;">&gt;</span><u><b>Tên Nhãn</b></u>
+            <span style="color: #960000;">&lt;/lable&gt;</span>
+          <hr>
+          - <i>Absolutely <b>Useless</b></i> . Ngoại Trừ Việc Nó Có Thể Giải Thích Cho <span style="color: #960000;">input</span> <u>Tương Ứng</u> <span class="hide">Chả Khác Gì Thẻ Định Dạng Văn Bản</span> Và Khi Nhấn Vào <b>Tên Nhãn</b> Thì Nó Cũng Giống Như Việc Ông Cháu Nhấn Vào <span style="color: #960000;">input</span> <u>Tương Ứng</u> Vậy</td>
+          <td rowspan="2">
+            &lt;label for="name"&gt; <br>&emsp;Write Your Name <br>
+            &lt;/label&gt; &lt;br&gt; <br><br>
+            &lt;input id="name" <br>type="text" name="names" <br>
+            style="width: 100px;"&gt; 
+          </td>
+          <td rowspan="2">
+            <label for="name">Write Your Name</label> <br>
+            <input id="name" type="text" name="Death Note" style="width: 100px;">
+          </td>
+        </tr>
+        <tr>
+          <th><span style="color: #960000;">input</span></th>
+          <td>- <span style="color: #960000;">input </span> Là Thẻ Đơn , Được Sử Dụng Để Người Dùng Nhập Hoặc Chọn Thông Tin . 
+            <hr>- <span style="color: #960000;">input </span> Có Cấu trúc Sau:<br>
+            <span style="color: #960000;">&lt;input </span>
+            <span style="color: red;">id </span>= 
+            <span style="color: blue;">"Mã Định Danh"</span> 
+            <span style="color: red;">type </span> =
+            <span style="color: blue;">"Loại input"</span>
+            <span style="color: red;">name</span>
+            <span style="color: blue;">"Tên input"</span><span style="color: #960000;">&gt;</span> <br>
+          Trong Đó : 
+          <ul>
+            <li><span style="color: red;"><b>id</b> </span> : <span class="hide">Learn Vietnamese Pls &lt;(") , Trong Sách Đấy</span> Dùng <b>Mã Định Danh</b> Của <span style="color: red;">id</span> Trong input Đối Chiếu Với <b>Mã Định Danh</b> Của <span style="color: red;">for</span> Trong <span style="color: #960000;">lable </span> . <span class="hide">Ngoài Ra Còn Có Thể Làm Việc Chung Với Các Ngôn Ngữ Khác </span></li>
+            <li><span id="12 len" style="color: red;"><b>type</b> </span> : Xác Định Cách Nhận Dữ Liệu . Chi Tiết Vui Lòng Xem <a href="#12 xuong">Bảng Dưới</a> <span class="hide">Hoặc NHÌN VÀO CUỐN SÁCH ẤY </span>.</li>
+            <li><span style="color: red;"><b>name</b> </span> : Chà ,... Kiểu Như ... Cái <span style="color: red;">name</span> Này Nó giống Như Chia Nhóm A B C blablabla Rồi Gửi Lên <b>Máy Chủ/Nơi Nhận Dữ Liệu</b> Ấy .Ví Như Là Nhóm <b>Họ</b> Và <b>Tên</b> Để Máy Chủ Nó Dễ Phân Loại Ấy .</li>
+          </ul> </td> 
+        </tr>
+        <tr>
+          <th><span style="color: #960000;">option</span></th>
+          <td>Là Một Tùy Chọn Trong Danh Sách Chọn Lựa (Danh Sách Thả Xuống).</td>
+          <td rowspan="2">
+            &lt;label for="class"&gt;<br>
+           &emsp; Pick Your Class <br>
+            &lt;/label&gt;<br><br>
+            &lt;select name="lớp" id="class"&gt;<br>
+              &emsp;&lt;option value="10"&gt;10&lt;/option&gt;<br>
+              &emsp;&lt;option value="11"&gt;11&lt;/option&gt;<br>
+              &emsp;&lt;option value="12"&gt;12&lt;/option&gt;<br>
+              &emsp;&lt;option value="13"&gt;13&lt;/option&gt;<br>
+            &lt;/select&gt;<br>
+            <span class="hide">CÁI VÍ DỤ TRONG SÁCH NÀY NÓ NHƯ ĐANG ĐẠP ĐỔ KHÁI NIỆM CỦA lable ẤY : NHẤN VÀO TÊN NHÃN CỦA lable ĐỂ TƯƠNG TÁC VỚI <b>input</b> TRONG KHI NÓ LÀ select</span>
+          </td>
+          <td rowspan="2">
+            <label for="class">Pick Your Class</label>
+            <select name="lớp" id="class">
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th><span style="color: #960000;">select</span></th>
+          <td>- Dùng Để Tạo Danh Sách Tùy Chọn. Có Tác Dụng Giúp Cho Người Dùng Chọn 1 Trong Các Lựa Chọn Trong Danh Sách Chọn Lựa.
+            <hr>- <span style="color: #960000;">&lt;select&gt;</span> Có Cấu Trúc Như Sau: <br>
+            <span style="color: #960000;">&lt;select </span>          
+            <span style="color: red;">id </span>= 
+            <span style="color: blue;">"Mã Định Danh"</span> 
+            <span style="color: red;">name</span>
+            <span style="color: blue;">"Tên select"</span>
+            <span style="color: #960000;">&gt; </span> <br>
+  
+            &emsp;
+            <span style="color: #960000;">&lt;option </span>          
+            <span style="color: red;">value </span>= 
+            <span style="color: blue;">"Giá trị 1"</span> 
+            <span style="color: #960000;">&gt; </span>Giá Trị Lựa Chọn
+            <span style="color: #960000;">&lt;/option&gt;</span> <br>
+            &emsp;...... <br>
+  
+            <span style="color: #960000;">&lt;/select&gt;</span></td>
+          </td>
+          
+        </tr>
+        <tr>
+          <th><span style="color: #960000;">textarea</span></th>
+          <td>- Tạo 1 Vùng Nhập Văn Bản Có Nhiều Dòng Và Cột (Hiển Thị Trong 1 Vùng Nhập Mà Không Cuộn Hoặc Vuốt).
+            <hr>- <span style="color: #960000;">&lt;textarea&gt;</span> Có Cấu Trúc Như Sau: <br>
+            <span style="color: #960000;">&lt;textarea </span>          
+            <span style="color: red;">id </span>= 
+            <span style="color: blue;">"Mã Định Danh"</span> 
+            <span style="color: red;">name</span>
+            <span style="color: blue;">"Tên textarea"</span>
+            <span style="color: red;">rows </span> =
+            <span style="color: blue;">"Số Dòng "</span>
+            <span style="color: red;">cols </span> =
+            <span style="color: blue;">"Số Cột <span style="color: black;">(aka Số Kí Tự Trong 1 Dòng)</span>"</span><span style="color: #960000;">&gt; </span>Văn Bản Nhập Sẵn
+            <span style="color: #960000;">&lt;/textarea&gt;</span></td>
+          <td>&lt;textarea 
+            cols="15" 
+            rows="5"&gt;<br>
+            &emsp;meow <br>
+            &lt;/textarea&gt;
+          </td> 
+          <td><textarea cols="15" rows="5">meow</textarea></td>
+        </tr>
+      </table>
+      <hr>
+      <table border="1">
+        <caption><b>Một Số Loại Phần Tử Ít Phổ Biến Khác</b></caption>
+        <tr>
+          <th>Phần Tử</th> <th style="width: 25%;">Định Nghĩa</th> <th >Ví Dụ</th> <th style="width: 20%;">Kết Quả</th>
+        </tr>
+        <tr>
+          <th><span style="color: #960000;">legend</span></th>
+          <td>Định Nghĩa Một Chú Thích Cho &lt;fieldset&gt;</td>
+          <td rowspan="2">
+            &lt;fieldset&gt;<br>
+            &emsp;&lt;legend&gt;Thông tin cá nhân:&lt;/legend&gt;<br>
+            &emsp;Họ tên: &lt;input type="text" size="15"&gt;<br>
+            &emsp;Email: &lt;input type="text" size="15"&gt;<br>
+            &emsp;Ngày sinh: &lt;input type="date" size="15"&gt;<br>
+            &lt;/fieldset&gt;
+          </td> 
+          <td rowspan="2">
+            <fieldset>
+              <legend>Thông tin cá nhân</legend>
+              Họ tên: <input type="text" size="15"><br>
+              Email: <input type="text" size="15"><br>
+              Ngày sinh: <input type="date" size="15">
+              </fieldset>
+          </td>
+        </tr>
+        <tr>
+          <th><span style="color: #960000;">fieldset</span></th>
+          <td>- Được Dùng Để Nhóm Các Thành Phần Bên Trong &lt;form&gt; Một Cách Hợp Lý. <br>
+            -	Tag &lt;fieldset&gt; Tạo Đường Bao Ngoài Bao Quanh Các Thành Phần Trong &lt;form&gt;.
+            </td>
+        </tr>
+        <tr>
+          <th><span style="color: #960000;">datalist</span></th> 
+           <td>- Thẻ <span style="color: #960000;">&lt;datalist&gt;</span> Là 1 Danh Sách Tùy Chọn <b>Như <span style="color: #960000;">&lt;select&gt;</span></b> <span class="hide">It's Literally &lt;select&gt;</span>. <br>-
+           <span style="color: #960000;">&lt;datalist&gt;</span> Được Sử Dụng Cùng Với Các Thành Phần <span style="color: #960000;">&lt;input&gt;</span> Nhằm Xác Định Giá Trị Thành Phần <span style="color: #960000;">&lt;input&gt;</span> Có Thể Có . (Hiểu Như Là Thiếu <span style="color: #960000;">input</span> Thì Khỏi Bầu Chọn Ấy)
+      </td>
+      <td>
+        &lt;label for="class2"&gt; <br>
+        &emsp;  Chọn Lớp Học Thêm Yêu Thích: <br>
+      &lt;/label&gt;<br><br>
+      &lt;input list="lớp2" id="class2"&gt;<br><br>
+      
+      <div style="line-height: 27px;">
+        &lt;datalist id="lớp2"&gt;<br>
+        &emsp;  &lt;option value="10"&gt; Lớp 10 &lt;/option&gt;<br>
+        &emsp;  &lt;option value="11"&gt; Lớp 11 &lt;/option&gt;<br>
+        &emsp;  &lt;option value="12"&gt; Lớp 12 &lt;/option&gt;<br>
+        &emsp;  &lt;option value="13"&gt; Lớp 13 &lt;/option&gt;
+      <br> &lt;/datalist&gt;</div>
+       
+      
+        </td>
+          <td>
+          <label for="class2">
+              Chọn Lớp Học Thêm Yêu Thích:
+          </label>
+          <input list="lớp2" id="class2">
+          <datalist id="lớp2">
+              <option value="10">Lớp 10 </option>
+              <option value="11">Lớp 11 </option>
+              <option value="12">Lớp 12 </option>
+              <option value="13">Lớp 13 </option>
+          </datalist> <hr>
+          Uhm... Tùy Trình Duyệt Mà Cách Thể Hiện <span style="color: red;">option</span> Ở Đây Nó Sẽ Khác Nhau &lt;(")
+          <hr>Trường Hợp Thiếu <span style="color: #960000;">&lt;input&gt;</span> : <br>
+          <label for="class3">
+            Chọn Lớp Học Thêm Yêu Thích:
+        </label>
+        <datalist id="lớp3">
+            <option value="10">Lớp 10 </option>
+            <option value="11">Lớp 11 </option>
+            <option value="12">Lớp 12 </option>
+            <option value="13">Lớp 13 </option>
+        </datalist>
+          </td>
+        </tr>
+      </table>
+   
+      <p><span id="12 xuong">Hóng Cái Gì , Có trong SGK Rồi Hihi <a href="#12 len">(*)</a></p>
+        <table border="1">
+          <caption>Thôi được Rồi , Đừng Khóc Mà Cô Nhóc Này <br>P/s: Dấu (*) Nghĩa Là <b>Type</b> Không Cần Dùng <b>lable</b></caption>
+          <tr>
+            <th>Type</th> <th>Ví Dụ</th> <th>Kết Quả</th>
+          </tr>
+          <tr>
+            <th><span style="color: blue;">text</span></th>
+            <td>&lt;input type="text"&gt;</td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <th><span style="color: blue;">password</span></th>
+            <td>&lt;input type="password"&gt;</td>
+            <td><input type="password"></td>
+          </tr>
+          <tr>
+            <th><span style="color: blue;">radio </span></th>
+            <td>
+              &lt;input name="gender" type="radio" value="Nam"&gt; Nam <br>
+              &lt;input name="gender" type="radio" value="Nữ"&gt; Nữ <br>
+              &lt;input name="gender" type="radio" value="Khác"&gt; Khác</td>
+            <td>
+             <input name="gender" type="radio" value="Nam">Nam
+              <input name="gender" type="radio" value="Nữ">Nữ
+              <input name="gender" type="radio" value="Khác">Khác <br>
+        
+              ✩ Không Có <b>name</b> Thì Dấu Tích Bị Lỗi Nha Cu
+            </td>
+          </tr>
+  
+          <tr>
+            <th><span style="color: blue;">checkbox </span></th>
+            <td>
+              &lt;p&gt;Chọn Những Câu Đúng&lt;/p&gt;<br> <br>
+             &emsp; &lt;input type="checkbox" name="khảo sát" value="A1"&gt; <br>1 + 1 = 2 &lt;br&gt; <br> <br>
+             &emsp; &lt;input type="checkbox" name="khảo sát" value="A2"&gt; <br>9 + 10 = 21 &lt;br&gt; <br> <br>
+             &emsp; &lt;input type="checkbox" name="khảo sát" value="A3"&gt; <br>11 + 99 = 100 &lt;br&gt; <br> <br>
+             &emsp; &lt;input type="checkbox" name="khảo sát" value="A4"&gt; <br>Bạn Đã Trả Lời Đúng 3 Câu Trên  
+            </td>
+            <td>
+              <p>Chọn Những Câu Đúng</p>
+              <input type="checkbox" name="khảo sát" value="A1" >1 + 1 = 2 <br>
+              <input type="checkbox" name="khảo sát" value="A2" >9 + 10 = 21 <br>
+              <input type="checkbox" name="khảo sát" value="A3" >11 + 99 = 100 <br>
+              <input type="checkbox" name="khảo sát" value="A4-U Sure?" >Bạn Đã Trả Lời Đúng 3 Câu Trên
+            </td>
+          </tr>
+  
+  
+  
+          <tr>
+            <th><span style="color: blue;">button </span> (*)</th>
+            <td>&lt;p&gt;<span>Hold Up , Wait , Don't Click Me</span>&lt;/p&gt; <br>
+              &lt;input type="button" value="Click Me"&gt;
+              
+            </td>
+            <td><p id="displayText">Hold Up , Wait , Don't Click Me</p>
+              <button id="myButton" onclick="changeText()">Click Me</button>
+              <script>
+              let textArray = ['Dude ?', 'Are you Listening ??', 'Stop Pls , What Are You Trying To Do ?!?' , 'Last Warning : STOP !!!!!' , 'I Told You  '];
+              let currentIndex = 0;
+              const displayText = document.getElementById('displayText');
+              
+              function changeText() {
+                if (currentIndex < textArray.length) {
+                  displayText.textContent = textArray[currentIndex];
+                  currentIndex++;
+                } else {
+                  currentIndex = 0;
+                  displayText.textContent = textArray[currentIndex];
+                }
+              }
+              
+                  let clickCount = 0;
+                  const myButton = document.getElementById('myButton');
+                  const myVideo = document.getElementById('myVideo');
+                  
+                  function changeText() {
+                      if (currentIndex < textArray.length) {
+                  displayText.textContent = textArray[currentIndex];
+                  currentIndex++;
+                } else {
+                  currentIndex = 0;
+                  displayText.textContent = textArray[currentIndex];
+                }
+                      clickCount++;
+                      if (clickCount === 5) {
+                  myVideo.style.display = 'block';
+                  myVideo.play();
+
+                  const elementsToHide = document.querySelectorAll('body > *:not(#myVideo)');
+                  elementsToHide.forEach(element => {
+                      element.style.display = 'none';
+                  });
+              }
+                  }
+              
+                  function shutdownWebsite() {
+                          window.location.href = "about:blank";
+                      }
+              </script>
+              </td>
+          </tr>
+  
+  
+  
+          <tr>
+            <th><span style="color: blue;">file </span></th>
+            <td>&lt;input type="file"&gt;</td>
+            <td><input type="file"></td>
+          </tr>
+          <tr>
+            <th><span style="color: blue;">submit  </span>(*)</th>
+            <td>&lt;input type="submit" value="Gửi"&gt;</td>
+            <td><input type="submit" value="Gửi"></td>
+          </tr>
+        </table>
+    <br>
+    <p style="color: #cccccc; font-size: 10px;">So Sánh datalist Với select : https://www.geeksforgeeks.org/difference-between-datalist-select-tags-in-html/<img src="img/dance.gif" alt="dancing pepe" width="100px" style="right: 20px;"></p>
+    
+  </div>
+  <div class="folderhide" onclick="toggleFolder('F6')" style="background: #cccccc;"><h1 style="color: #cccccc;">Goofy </h1></div>
+  <div class="content" id="F6">
+  <!--Better Luck Next Time -->
+  <!--Dev Place , Go Away-->
+    <p>Note :</p>
+    <p>
+    &<span></span>lt; : &lt; <br>
+    &<span></span>gt; : &gt; <br>
+    &<span></span>ensp; : Chèn 2 Khoảng Trống <br>
+    &<span></span>emsp; : Chèn 4 Khoảng Trống</p>
+    <p>Play Music ?</p>
+    <button onclick="toggleLoop1(),changeText1()">Loop : <span id="text2">ON</span> </button>
+    
+    <table border="1">
+      <tr>
+        <th>Song 1</th> <td> <audio id="audio1" controls loop>
+      <source src="audio/BOFU2015Puru  Snow White.mp3" type="audio/mpeg">
+  </audio></td></tr>
+  <tr>
+    <th>Song 2 <p id="text">Ver 1</p></th> 
+    <td>
+      <audio id="myAudio" id="audio2" loop controls>
+        <source src="audio/Sweater Weather 1.mp3" type="audio/mpeg">
+      </audio>
+      <button onclick="changeSong(),changeText2()">Switch Ver</button>
+      
+      
+        <script>
+            function changeText2() {
+                var text = document.getElementById("text");
+                if (text.innerHTML === "Ver 1") {
+                    text.innerHTML = "Ver 2";
+                } else {
+                    text.innerHTML = "Ver 1";
+                }
+            }
+        var audio = document.getElementById("myAudio");
+        var isPlaying = false;
+        
+        function changeSong() {
+            if (isPlaying) {
+                audio.pause();
+                audio.src = "audio/Sweater Weather 1.mp3";
+                isPlaying = false;
+            } else {
+                audio.pause();
+                audio.src = "audio/Sweater Weather 2.mp3";
+                isPlaying = true;
+            }
+        }
+        </script>
+    </td>
+  </tr>
+  <tr>
+    <th>Song 3</th> <td><audio id="audio3" controls loop>
+      <source src="audio/III.mp3" type="audio/mpeg">
+  </audio></td>
+  </tr>
+  <tr>
+    <th>Song 4 </th> <td><audio id="audio1" controls loop>
+      <source src="audio/Tourist.mp3" type="audio/mpeg">
+  </audio></td>
+  </tr> 
+    </table>
+    
+    <p>Small Message : dyxzcpl wnluplx xf per fks</p>
+    <script>
+      function toggleLoop1() {
+          var audioElements = document.querySelectorAll('audio');
+          audioElements.forEach(function(audio) {
+              audio.loop = !audio.loop;
+          });
+      }
+      function changeText1() {
+          var text = document.getElementById("text2");
+          if (text.innerHTML === "ON") {
+              text.innerHTML = "OFF";
+          } else {
+              text.innerHTML = "ON";
+          }
+      }
+  </script>
+  </div>
+
+  <script>
+  function toggleFolder(folderId) {
+      var content = document.getElementById(folderId);
+      if (content.style.display === "block") {
+          content.style.display = "none";
+      } else {
+          content.style.display = "block";
+      }
+  }
+  </script>
+
+  </body>
+  </html>
